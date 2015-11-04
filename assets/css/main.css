@@ -1,0 +1,41 @@
+body {
+    font-family: "Fira Mono",Arial,Helvetica,sans-serif;
+    background-color: #26a69a;
+}
+
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #FFF;
+    font-size: 6em;
+    line-height: 12px;
+}
+
+h5 {
+    color: #FFF;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icon {
+    margin: 0 auto;
+    display: inline-block;
+    height: 41px;
+    width: 41px;
+    background-size: 41px;
+}
+
+.linkedin {
+    background-image: url("../icons/linkedin.png");
+}
+
+.linkedin:hover {
+    background-image: url("../icons/linkedin-hover.png");
+}
