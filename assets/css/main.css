@@ -21,7 +21,7 @@ h5 {
 }
 
 .icons {
-    text-align: center;
+    text-align: right;
 }
 
 .icon {
@@ -30,6 +30,7 @@ h5 {
     height: 41px;
     width: 41px;
     background-size: 41px;
+    background-repeat: no-repeat;
 }
 
 .linkedin {
@@ -39,3 +40,18 @@ h5 {
 .linkedin:hover {
     background-image: url("../icons/linkedin-hover.png");
 }
+
+.xing {
+    background-image: url("../icons/xing.png");
+}
+
+.xing:hover {
+    background-image: url("../icons/xing-hover.png");
+}
+
+.mail {
+    background-image: url("../icons/mail.png");
+}
+
+.mail:hover {
+    background-image: url("../icons/mail-hover.png");
