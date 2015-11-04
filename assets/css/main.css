@@ -25,8 +25,8 @@ h5 {
 }
 
 .icon {
-    margin: 0 auto;
-    display: inline-block;
+    float: right;
+    margin-left: 10px;
     height: 41px;
     width: 41px;
     background-size: 41px;
