@@ -1,0 +1,11 @@
+.HoneyTracksLogo {
+  height: 8em;
+  width: auto;
+}
+
+@media only screen
+and (max-width: 1024px) {
+  .HoneyTracksLogo {
+    height: 6em;
+  }
+}

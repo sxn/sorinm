@@ -1,0 +1,13 @@
+.StackOverflowLogo {
+  height: 6em;
+  width: auto;
+  margin: 1em 1em 0 1em;
+}
+
+.StackOverflowLogo-Stack {
+  fill: #BCBBBB;
+} 
+
+.StackOverflowLogo-Base {
+  fill: #F48023;
+}

@@ -1,0 +1,54 @@
+.Timeline {
+  height: 100%;
+  flex: 0.2;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    90deg, 
+    transparent calc(50% - 0.81px), 
+    #ffffff calc(50% - 0.8px), 
+    #ffffff calc(50% + 0.8px), 
+    transparent calc(50% + 0.81px), 
+    transparent 100%
+  ); 
+}
+
+.Timeline-DateContainer {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50%;
+  height: 6em;
+  width: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Timeline-Date {
+  padding: 5px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.Timeline-Top {
+  margin-top: 2em;
+}
+
+.Timeline-Bottom {
+  margin-bottom: 2em;
+}
+
+
+@media only screen
+and (max-width: 1024px) {
+  .Timeline-DateContainer {
+    height: 4em;
+    width: 4em;
+  }
+
+  .Timeline-Date {
+    font-size: 0.8em;
+  }
+}

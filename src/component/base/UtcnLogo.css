@@ -1,0 +1,12 @@
+.UtcnLogo {
+  height: 8em;
+  width: auto;
+  margin-bottom: 0.5em;
+}
+
+@media only screen
+and (max-width: 1024px) {
+  .UtcnLogo {
+    height: 5em;
+  }
+}

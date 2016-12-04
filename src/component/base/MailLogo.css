@@ -1,0 +1,19 @@
+.MailLogo {
+  height: 4em;
+}
+
+.MailLogo-Link {
+  display: block;
+  margin: 0 1em 0 1em;
+}
+
+.MailLogo-Link:hover {
+  fill: #d42d38;
+}
+
+@media only screen
+and (max-width: 1024px) {
+  .MailLogo {
+    height: 2em;
+  }
+}

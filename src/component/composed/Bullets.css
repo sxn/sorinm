@@ -1,0 +1,15 @@
+.Bullets {
+  top: 50%;
+  left: 3%;
+  position: fixed;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+@media only screen
+and (max-width: 1024px)
+and (orientation: portrait) {
+  .Bullets {
+    left: 2%;
+  }
+}
