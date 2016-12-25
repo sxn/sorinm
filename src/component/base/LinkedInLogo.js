@@ -4,7 +4,7 @@ import './LinkedInLogo.css';
 
 const LinkedInLogo = () => (
   <div className="LinkedInLogo-Container">
-    <a className="LinkedInLogo-Link" href="https://www.linkedin.com/in/sorinmuntean" target="_blank">
+    <a className="LinkedInLogo-Link" href="https://www.linkedin.com/in/sorinmuntean" target="_blank" rel="noopener">
       <svg className="LinkedInLogo" viewBox="224.73 14.583 53.385 51.028">
         <g transform="translate(-200.55198,-393.96227)">
           <g transform="matrix(1.018827,0,0,-1.018827,170.5996,498.03288)">

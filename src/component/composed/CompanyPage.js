@@ -34,7 +34,7 @@ const CompanyPage = ({
       <div className="CompanyPage-LeftContainer">
         <div className="CompanyPage-Company">
           <div className="CompanyPage-Logo">
-            <a className="CompanyPage-LogoLink" href={url} target="_blank">
+            <a className="CompanyPage-LogoLink" href={url} target="_blank" rel="noopener">
               { logoMap[slug] }
             </a>
           </div>
