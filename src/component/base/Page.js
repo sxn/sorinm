@@ -1,13 +1,13 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes } from "react";
 
-import './Page.css';
+import "./Page.css";
 
 const Page = ({ children, style: childStyle }) => {
   const style = {
-    boxSizing: 'border-box',
-    height: '100vh',
-    position: 'relative',
-    width: '100%'
+    boxSizing: "border-box",
+    height: "100vh",
+    position: "relative",
+    width: "100%"
   };
 
   return (
@@ -19,12 +19,10 @@ const Page = ({ children, style: childStyle }) => {
 
 Page.propTypes = {
   children: PropTypes.node.isRequired,
-  childStyle: PropTypes.shape(
-    {
-      color: PropTypes.string.isRequired,
-      backgroundColor: PropTypes.string.isRequired
-    }
-  )
+  childStyle: PropTypes.shape({
+    color: PropTypes.string.isRequired,
+    backgroundColor: PropTypes.string.isRequired
+  })
 };
 
 export default Page;

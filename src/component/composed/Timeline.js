@@ -1,13 +1,19 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes } from "react";
 
-import './Timeline.css';
+import "./Timeline.css";
 
 const Timeline = ({ start, end, color }) => (
   <div className="Timeline">
-    <div className="Timeline-DateContainer Timeline-Top" style={{ 'color': color }}>
+    <div
+      className="Timeline-DateContainer Timeline-Top"
+      style={{ color: color }}
+    >
       <p className="Timeline-Date">{end}</p>
     </div>
-    <div className="Timeline-DateContainer Timeline-Bottom" style={{ 'color': color }}>
+    <div
+      className="Timeline-DateContainer Timeline-Bottom"
+      style={{ color: color }}
+    >
       <p className="Timeline-Date">{start}</p>
     </div>
   </div>

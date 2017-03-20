@@ -1,14 +1,17 @@
-import React, { PropTypes } from 'react';
-import classNames from 'classnames';
+import React, { PropTypes } from "react";
+import classNames from "classnames";
 
-import './Bullet.css';
+import "./Bullet.css";
 
-const Bullet = ({ index, active, isLastPage, selectedPage, pageCount, onClick }) => {
-  const classes = classNames('Bullet', { 'active': active, 'black': selectedPage === pageCount - 1});
+const Bullet = (
+  { index, active, isLastPage, selectedPage, pageCount, onClick }
+) => {
+  const classes = classNames("Bullet", {
+    active: active,
+    black: selectedPage === pageCount - 1
+  });
 
-  return (
-    <div className={classes} onClick={() => onClick(index)}></div>
-  );
+  return <div className={classes} onClick={() => onClick(index)} />;
 };
 
 Bullet.propTypes = {

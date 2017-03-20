@@ -1,7 +1,8 @@
-const bySlug = ( state = {}, action ) => {
+const bySlug = (state = {}, action) => {
   switch (action.type) {
-  default:
-    return state;
+    default:
+      return state;
+
   }
 };
 

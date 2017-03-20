@@ -1,12 +1,12 @@
-const allSlugs = ( state = [], action ) => {
+const allSlugs = (state = [], action) => {
   switch (action.type) {
-  default:
-    return state;
+    default:
+      return state;
   }
 };
 
 export default allSlugs;
 
-export const getSlugs = (state) => state;
+export const getSlugs = state => state;
 
-export const getLatestSlug = (state) => state[state.length - 1];
+export const getLatestSlug = state => state[state.length - 1];

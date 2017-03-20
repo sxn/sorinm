@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
-import { Provider } from 'react-redux';
+import React, { PropTypes } from "react";
+import { Provider } from "react-redux";
 
-import App from '../connected/App';
+import App from "../connected/App";
 
 const Root = ({ store }) => (
   <Provider store={store}>
@@ -10,13 +10,11 @@ const Root = ({ store }) => (
 );
 
 Root.propTypes = {
-  store: PropTypes.shape(
-    {
-      getState: PropTypes.func.isRequired,
-      subscribe: PropTypes.func.isRequired,
-      dispatch: PropTypes.func.isRequired
-    }
-  ).isRequired
+  store: PropTypes.shape({
+    getState: PropTypes.func.isRequired,
+    subscribe: PropTypes.func.isRequired,
+    dispatch: PropTypes.func.isRequired
+  }).isRequired
 };
 
 export default Root;

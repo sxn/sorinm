@@ -1,4 +1,4 @@
-export const selectPage = (page) => ({
-  'type': 'UPDATE_CURRENT_PAGE',
-  'page': page
+export const selectPage = page => ({
+  type: "UPDATE_CURRENT_PAGE",
+  page: page
 });
