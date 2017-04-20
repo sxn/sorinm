@@ -12,9 +12,7 @@ const App = ({ pages }) => (
 
     <WelcomePage />
 
-    {[...pages]
-      .reverse()
-      .map((page, index) => <CompanyPage key={page.slug} {...page} />)}
+    {pages.map(page => <CompanyPage key={page.slug} {...page} />)}
 
     <ContactPage />
   </div>
@@ -24,14 +22,14 @@ App.propTypes = {
   pages: PropTypes.arrayOf(
     PropTypes.shape({
       backgroundColor: PropTypes.string,
-      color: PropTypes.string,
-      slug: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-      start: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+      description: PropTypes.arrayOf(PropTypes.string).isRequired,
       end: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      slug: PropTypes.string.isRequired,
+      start: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
-      description: PropTypes.arrayOf(PropTypes.string).isRequired
+      url: PropTypes.string.isRequired
     })
   ).isRequired
 };

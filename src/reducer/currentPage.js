@@ -1,6 +1,6 @@
 import { SELECT_PAGE } from "actions";
 
-const paginator = (state = 0, action) => {
+const currentPage = (state = 0, action) => {
   switch (action.type) {
     case SELECT_PAGE:
       return action.page;
@@ -9,6 +9,4 @@ const paginator = (state = 0, action) => {
   }
 };
 
-export default paginator;
-
-export const getSelectedPage = state => state;
+export default currentPage;

@@ -1,11 +1,9 @@
 import { combineReducers } from "redux";
 
-import bySlug from "reducer/bySlug";
-import allSlugs from "reducer/allSlugs";
-import paginator from "reducer/paginator";
+import pages from "reducer/pages";
+import currentPage from "reducer/currentPage";
 
 export default combineReducers({
-  bySlug,
-  allSlugs,
-  paginator
+  pages,
+  currentPage
 });

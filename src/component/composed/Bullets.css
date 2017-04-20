@@ -10,6 +10,6 @@
 and (max-width: 1024px)
 and (orientation: portrait) {
   .Bullets {
-    left: 2%;
+    display: none
   }
 }
