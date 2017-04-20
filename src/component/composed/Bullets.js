@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import smoothScroll from "smoothscroll";
 
-import Bullet from "../base/Bullet";
-
+import Bullet from "component/base/Bullet";
 import "./Bullets.css";
 
 class Bullets extends Component {

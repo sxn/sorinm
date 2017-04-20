@@ -1,12 +1,12 @@
 import { connect } from "react-redux";
 
-import { getSelectedPage } from "../../reducer";
-import * as actions from "../../actions";
+import { getSelectedPage } from "selectors";
+import { selectPage } from "actions";
+import Bullets from "component/composed/Bullets";
 
-import Bullets from "../composed/Bullets";
-
-const mapStateToProps = state => ({
-  selectedPage: getSelectedPage(state)
-});
-
-export default connect(mapStateToProps, actions)(Bullets);
+export default connect(
+  state => ({
+    selectedPage: getSelectedPage(state)
+  }),
+  { selectPage }
+)(Bullets);

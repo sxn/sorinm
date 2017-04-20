@@ -1,11 +1,8 @@
 import { connect } from "react-redux";
 
-import { getPages } from "../../reducer";
+import { getPages } from "selectors";
+import App from "component/composed/App";
 
-import App from "../composed/App";
-
-const mapStateToProps = state => ({
+export default connect(state => ({
   pages: getPages(state)
-});
-
-export default connect(mapStateToProps)(App);
+}))(App);

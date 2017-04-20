@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Page from "../base/Page";
-import UtcnLogo from "../base/UtcnLogo";
-import ArobsLogo from "../base/ArobsLogo";
-import AgilioLogo from "../base/AgilioLogo";
-import HoneyTracksLogo from "../base/HoneyTracksLogo";
-import InterNationsLogo from "../base/InterNationsLogo";
-import Timeline from "../composed/Timeline";
-
+import Page from "component/base/Page";
+import UtcnLogo from "component/base/UtcnLogo";
+import ArobsLogo from "component/base/ArobsLogo";
+import AgilioLogo from "component/base/AgilioLogo";
+import HoneyTracksLogo from "component/base/HoneyTracksLogo";
+import InterNationsLogo from "component/base/InterNationsLogo";
+import Timeline from "component/composed/Timeline";
 import "./CompanyPage.css";
 
 const logoMap = {

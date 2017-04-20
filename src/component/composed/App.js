@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Bullets from "../connected/Bullets";
-import ContactPage from "../composed/ContactPage";
-import WelcomePage from "../composed/WelcomePage";
-import CompanyPage from "../composed/CompanyPage";
+import Bullets from "component/connected/Bullets";
+import ContactPage from "component/composed/ContactPage";
+import WelcomePage from "component/composed/WelcomePage";
+import CompanyPage from "component/composed/CompanyPage";
 
 const App = ({ pages }) => (
   <div className="App">

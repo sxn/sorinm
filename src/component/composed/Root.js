@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Provider } from "react-redux";
 
-import App from "../connected/App";
+import App from "component/connected/App";
 
 const Root = ({ store }) => (
   <Provider store={store}>
