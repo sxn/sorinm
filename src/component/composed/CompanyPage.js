@@ -10,19 +10,17 @@ import Timeline from "../composed/Timeline";
 
 import "./CompanyPage.css";
 
-const CompanyPage = (
-  {
-    backgroundColor,
-    color,
-    slug,
-    name,
-    url,
-    start,
-    end,
-    title,
-    description
-  }
-) => {
+const CompanyPage = ({
+  backgroundColor,
+  color,
+  slug,
+  name,
+  url,
+  start,
+  end,
+  title,
+  description
+}) => {
   const logoMap = {
     utcn: <UtcnLogo />,
     arobs: <ArobsLogo />,

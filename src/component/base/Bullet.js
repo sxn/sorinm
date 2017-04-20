@@ -3,9 +3,14 @@ import classNames from "classnames";
 
 import "./Bullet.css";
 
-const Bullet = (
-  { index, active, isLastPage, selectedPage, pageCount, onClick }
-) => {
+const Bullet = ({
+  index,
+  active,
+  isLastPage,
+  selectedPage,
+  pageCount,
+  onClick
+}) => {
   const classes = classNames("Bullet", {
     active: active,
     black: selectedPage === pageCount - 1

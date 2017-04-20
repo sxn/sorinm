@@ -16,14 +16,5 @@ export const getPages = state => {
   return slugs.map(slug => fromBySlug.getPage(state.bySlug, slug));
 };
 
-export const getPageBySlug = (state, slug) =>
-  fromBySlug.getPage(state.bySlug, slug);
-
-export const getLastPage = state => {
-  const slug = fromAllSlugs.getLastSlug(state.allSlugs);
-
-  return getPageBySlug(state, slug);
-};
-
 export const getSelectedPage = state =>
   fromPaginator.getSelectedPage(state.paginator);
