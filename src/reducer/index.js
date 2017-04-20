@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import bySlug, * as fromBySlug from "./bySlug";
-import allSlugs, * as fromAllSlugs from "./allSlugs";
-import paginator, * as fromPaginator from "./paginator";
+import bySlug, * as fromBySlug from "reducer/bySlug";
+import allSlugs, * as fromAllSlugs from "reducer/allSlugs";
+import paginator, * as fromPaginator from "reducer/paginator";
 
 const reducer = combineReducers({
   bySlug,

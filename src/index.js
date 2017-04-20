@@ -1,17 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
 
-import "./index.css";
-import configureStore from "./store";
+import "index.css";
+import configureStore from "store";
+import Root from "component/composed/Root";
 
-import Root from "./component/composed/Root";
-
-const store = configureStore();
-
-const render = () => {
-  ReactDOM.render(<Root store={store} />, document.getElementById("root"));
-};
-
-store.subscribe(render);
-
-render();
+render(<Root store={configureStore()} />, document.getElementById("root"));

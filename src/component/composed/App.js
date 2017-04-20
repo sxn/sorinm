@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 import Bullets from "../connected/Bullets";
 import ContactPage from "../composed/ContactPage";
@@ -8,10 +9,13 @@ import CompanyPage from "../composed/CompanyPage";
 const App = ({ pages }) => (
   <div className="App">
     <Bullets count={pages.length + 2} />
+
     <WelcomePage />
+
     {[...pages]
       .reverse()
       .map((page, index) => <CompanyPage key={page.slug} {...page} />)}
+
     <ContactPage />
   </div>
 );

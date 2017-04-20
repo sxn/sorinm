@@ -8,7 +8,7 @@ import MailLogo from "../base/MailLogo";
 import "./ContactPage.css";
 
 const ContactPage = () => (
-  <Page style={{ backgroundColor: "#ffffff" }}>
+  <Page backgroundColor={"#ffffff"}>
     <div className="ContactPage-Container">
       <div className="ContactPage-LeftContainer">
         <div className="ContactPage-Picture" />

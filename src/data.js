@@ -1,5 +1,3 @@
-const allSlugs = ["utcn", "arobs", "agilio", "honeytracks", "internations"];
-
 const bySlug = {
   utcn: {
     backgroundColor: "#bc171d",
@@ -88,10 +86,12 @@ const bySlug = {
   }
 };
 
+const allSlugs = ["utcn", "arobs", "agilio", "honeytracks", "internations"];
+
 const paginator = 0;
 
 export default {
-  bySlug,
   allSlugs,
+  bySlug,
   paginator
 };

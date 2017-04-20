@@ -5,7 +5,7 @@ import Page from "../base/Page";
 import "./WelcomePage.css";
 
 const WelcomePage = () => (
-  <Page style={{ backgroundColor: "#d42d38", color: "#ffffff" }}>
+  <Page backgroundColor={"#d42d38"} color={"#ffffff"}>
     <div className="WelcomePage">
       <p className="WelcomePage-LargeText">Hi!</p>
       <p className="WelcomePage-Text">My name's Sorin.</p>

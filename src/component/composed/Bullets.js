@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 import smoothScroll from "smoothscroll";
 
 import Bullet from "../base/Bullet";
@@ -10,10 +11,6 @@ class Bullets extends Component {
     document.addEventListener("scroll", this.handleScroll);
     document.addEventListener("keydown", this.disableArrows);
     document.addEventListener("keyup", this.handleArrowNavigation);
-  };
-
-  componentWillUnmount = () => {
-    window.removeEventListener("scroll", this.handleScroll);
   };
 
   handleScroll = () => {

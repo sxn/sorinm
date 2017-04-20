@@ -1,6 +1,8 @@
+import { SELECT_PAGE } from "actions";
+
 const paginator = (state = 0, action) => {
   switch (action.type) {
-    case "UPDATE_CURRENT_PAGE":
+    case SELECT_PAGE:
       return action.page;
     default:
       return state;
