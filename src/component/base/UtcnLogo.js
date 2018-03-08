@@ -20,11 +20,11 @@ const UtcnLogo = ({ includeText }) => {
 };
 
 UtcnLogo.propTypes = {
-  includeText: PropTypes.bool.isRequired
+  includeText: PropTypes.bool.isRequired,
 };
 
 UtcnLogo.defaultProps = {
-  includeText: false
+  includeText: false,
 };
 
 export default UtcnLogo;

@@ -20,11 +20,11 @@ const AgilioLogo = ({ includeText }) => {
 };
 
 AgilioLogo.propTypes = {
-  includeText: PropTypes.bool.isRequired
+  includeText: PropTypes.bool.isRequired,
 };
 
 AgilioLogo.defaultProps = {
-  includeText: false
+  includeText: false,
 };
 
 export default AgilioLogo;

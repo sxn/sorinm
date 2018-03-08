@@ -14,8 +14,8 @@ Root.propTypes = {
   store: PropTypes.shape({
     getState: PropTypes.func.isRequired,
     subscribe: PropTypes.func.isRequired,
-    dispatch: PropTypes.func.isRequired
-  }).isRequired
+    dispatch: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 export default Root;

@@ -6,7 +6,7 @@ import Bullets from "component/composed/Bullets";
 
 export default connect(
   state => ({
-    selectedPage: getSelectedPage(state)
+    selectedPage: getSelectedPage(state),
   }),
-  { selectPage }
+  { selectPage },
 )(Bullets);

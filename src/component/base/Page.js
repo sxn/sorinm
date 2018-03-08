@@ -13,9 +13,8 @@ const Page = ({ children, color, backgroundColor }) => {
         position: "relative",
         width: "100%",
         color,
-        backgroundColor
-      }}
-    >
+        backgroundColor,
+      }}>
       {children}
     </div>
   );
@@ -24,7 +23,7 @@ const Page = ({ children, color, backgroundColor }) => {
 Page.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 };
 
 export default Page;

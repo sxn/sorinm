@@ -15,7 +15,7 @@ const logoMap = {
   arobs: <ArobsLogo />,
   agilio: <AgilioLogo />,
   honeytracks: <HoneyTracksLogo />,
-  internations: <InterNationsLogo />
+  internations: <InterNationsLogo />,
 };
 
 const CompanyPage = ({
@@ -27,18 +27,13 @@ const CompanyPage = ({
   slug,
   start,
   title,
-  url
+  url,
 }) => (
   <Page backgroundColor={backgroundColor} color={color}>
     <div className="CompanyPage-LeftContainer">
       <div className="CompanyPage-Company">
         <div className="CompanyPage-Logo">
-          <a
-            className="CompanyPage-LogoLink"
-            href={url}
-            target="_blank"
-            rel="noopener"
-          >
+          <a className="CompanyPage-LogoLink" href={url} target="_blank" rel="noopener">
             {logoMap[slug]}
           </a>
         </div>
@@ -52,10 +47,7 @@ const CompanyPage = ({
     <div className="CompanyPage-RightContainer">
       <div className="CompanyPage-DescriptionContainer">
         {description.map((row, index) => (
-          <p
-            className="CompanyPage-Description"
-            key={slug + "-description-" + index}
-          >
+          <p className="CompanyPage-Description" key={slug + "-description-" + index}>
             {row}
           </p>
         ))}
@@ -73,7 +65,7 @@ CompanyPage.propTypes = {
   slug: PropTypes.string.isRequired,
   start: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
 };
 
 export default CompanyPage;

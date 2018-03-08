@@ -20,11 +20,11 @@ const HoneyTracksLogo = ({ includeText }) => {
 };
 
 HoneyTracksLogo.propTypes = {
-  includeText: PropTypes.bool.isRequired
+  includeText: PropTypes.bool.isRequired,
 };
 
 HoneyTracksLogo.defaultProps = {
-  includeText: false
+  includeText: false,
 };
 
 export default HoneyTracksLogo;

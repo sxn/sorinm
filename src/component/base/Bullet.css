@@ -4,8 +4,8 @@
   width: 0.7em;
   background: #ffffff;
   cursor: pointer;
-  opacity: .4;
-  transition: opacity .35s;
+  opacity: 0.4;
+  transition: opacity 0.35s;
   border-radius: 0.7em;
   margin-top: 0.7em;
 }
@@ -19,9 +19,7 @@
   background: #000000;
 }
 
-@media only screen
-and (max-width: 1024px)
-and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
   .Bullet {
     height: 0.5em;
     width: 0.5em;

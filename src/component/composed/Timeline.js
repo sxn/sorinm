@@ -17,7 +17,7 @@ const Timeline = ({ start, end, color }) => (
 Timeline.propTypes = {
   start: PropTypes.string.isRequired,
   end: PropTypes.string.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
 };
 
 export default Timeline;

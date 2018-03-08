@@ -20,11 +20,11 @@ const InterNationsLogo = ({ includeText }) => {
 };
 
 InterNationsLogo.propTypes = {
-  includeText: PropTypes.bool.isRequired
+  includeText: PropTypes.bool.isRequired,
 };
 
 InterNationsLogo.defaultProps = {
-  includeText: false
+  includeText: false,
 };
 
 export default InterNationsLogo;

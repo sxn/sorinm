@@ -45,11 +45,11 @@ const ArobsLogo = ({ includeText }) => {
 };
 
 ArobsLogo.propTypes = {
-  includeText: PropTypes.bool.isRequired
+  includeText: PropTypes.bool.isRequired,
 };
 
 ArobsLogo.defaultProps = {
-  includeText: false
+  includeText: false,
 };
 
 export default ArobsLogo;

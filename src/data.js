@@ -18,8 +18,8 @@ export default {
         "- advocating SSL and leading the efforts necessary to make it ubiquitous",
         "- taking part in designing the REST API used by the web & mobile apps and leading the team tasked with implementing it",
         "- being the sole release manager for the better part of two years",
-        "The technology stack comprised PHP (Symfony2, Drupal and Magento), Backbone.js, Python, RabbitMQ, Apache Solr, MySQL & Redis."
-      ]
+        "The technology stack comprised PHP (Symfony2, Drupal and Magento), Backbone.js, Python, RabbitMQ, Apache Solr, MySQL & Redis.",
+      ],
     },
     {
       backgroundColor: "#fea104",
@@ -36,8 +36,8 @@ export default {
         "- fixing and improving the in-house PHP framework and its drivers, such as moving from Memcache to Memcached",
         "- improving scalability. This was done by introducing workers (and a daemon that controlled them) and delegating the data fetching process to them.",
         "- improving chart loading time by analyzing queries necessary to build customers' charts in order to figure out which were more time-consuming. Those which went over a specified threshold were then automatically prefetched.",
-        "The technology stack comprised PHP, Backbone.js, Beanstalkd, RabbitMQ & MySQL."
-      ]
+        "The technology stack comprised PHP, Backbone.js, Beanstalkd, RabbitMQ & MySQL.",
+      ],
     },
     {
       backgroundColor: "#0176b0",
@@ -54,8 +54,8 @@ export default {
         "- various internal tools (Python)",
         "- the company's homepage (jQuery, Symfony2)",
         "- Stipz, a (now defunct) video website that allowed users to (for a fee) stream video, host or attend webinars. Payment was handled using an in-house PayPal integration. (CodeIgniter, jQuery, Flash Media Server, MySQL)",
-        "- Nebo Learning, an enterprise e-learning platform. (Python, Oracle Database)"
-      ]
+        "- Nebo Learning, an enterprise e-learning platform. (Python, Oracle Database)",
+      ],
     },
     {
       backgroundColor: "#6dbe5d",
@@ -68,8 +68,8 @@ export default {
       title: "Software Developer (Intern)",
       description: [
         "In the course of this curricular internship I worked on implementing and customizing Interactive Responsive Technology systems for pharmaceutical studies, as specified by external clients.",
-        "The technology stack comprised .NET, ASP.NET Web Forms and Microsoft SQL Server 2008."
-      ]
+        "The technology stack comprised .NET, ASP.NET Web Forms and Microsoft SQL Server 2008.",
+      ],
     },
     {
       backgroundColor: "#bc171d",
@@ -83,8 +83,8 @@ export default {
       description: [
         "The education provided by the Computer Science Department of the Technical University of Cluj-Napoca ensures engineering-specific training, balance between the general technical, domain fundamental and narrow specialization disciplines and the integration of both theoretical and practical aspects. This formative type of education allows graduates to easily integrate and adapt to the dynamic requests of the industry.",
         "The curriculum is based on the ACM curriculum and syllabi guidelines for computer science and engineering.",
-        "Their bachelor's degree programmes are taught in either Romanian or English, folow the Bologna system and comprise 240 ECTS points, spread throughout 8 semesters."
-      ]
-    }
-  ]
+        "Their bachelor's degree programmes are taught in either Romanian or English, folow the Bologna system and comprise 240 ECTS points, spread throughout 8 semesters.",
+      ],
+    },
+  ],
 };

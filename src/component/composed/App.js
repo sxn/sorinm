@@ -29,9 +29,9 @@ App.propTypes = {
       slug: PropTypes.string.isRequired,
       start: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired
-    })
-  ).isRequired
+      url: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default App;

@@ -7,8 +7,7 @@ const StackOverflowLogo = () => (
     className="StackOverflowLogo-Link"
     href="https://stackoverflow.com/users/5495253/sxn"
     target="_blank"
-    rel="noopener"
-  >
+    rel="noopener noreferrer">
     <svg className="StackOverflowLogo" viewBox="0 0 120 120">
       <polygon
         className="StackOverflowLogo-Stack"

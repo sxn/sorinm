@@ -5,5 +5,5 @@ import currentPage from "reducer/currentPage";
 
 export default combineReducers({
   pages,
-  currentPage
+  currentPage,
 });

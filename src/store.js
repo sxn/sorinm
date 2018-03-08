@@ -9,9 +9,7 @@ const configureStore = () => {
   const middlewares = [thunk];
 
   if (process.env.NODE_ENV !== "production") {
-    middlewares.push(
-      createLogger({ duration: true, diff: true, collapsed: true })
-    );
+    middlewares.push(createLogger({ duration: true, diff: true, collapsed: true }));
   }
 
   const store = createStore(reducer, AppState, applyMiddleware(...middlewares));

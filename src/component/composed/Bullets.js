@@ -23,8 +23,8 @@ class Bullets extends Component {
   };
 
   disableArrows = e => {
-    const upArrowPressed = e.keyCode === 38;
-    const downArrowPressed = e.keyCode === 40;
+    const upArrowPressed = e.code === "ArrowUp";
+    const downArrowPressed = e.code === "ArrowDown";
 
     if (upArrowPressed || downArrowPressed) {
       e.preventDefault();
@@ -34,17 +34,17 @@ class Bullets extends Component {
   handleArrowNavigation = e => {
     const { selectedPage } = this.props;
 
-    const upArrowPressed = e.keyCode === 38;
-    const jPressed = e.keyCode === 75;
+    const upArrowPressed = e.code === "ArrowUp";
+    const kPressed = e.code === "KeyK";
 
-    if (upArrowPressed || jPressed) {
+    if (upArrowPressed || kPressed) {
       smoothScroll((selectedPage - 1) * window.innerHeight);
     }
 
-    const downArrowPressed = e.keyCode === 40;
-    const kPressed = e.keyCode === 74;
+    const downArrowPressed = e.code === "ArrowDown";
+    const jPressed = e.code === "KeyJ";
 
-    if (downArrowPressed || kPressed) {
+    if (downArrowPressed || jPressed) {
       smoothScroll((selectedPage + 1) * window.innerHeight);
     }
   };
@@ -72,7 +72,7 @@ class Bullets extends Component {
 Bullets.propTypes = {
   count: PropTypes.number.isRequired,
   selectedPage: PropTypes.number.isRequired,
-  selectPage: PropTypes.func.isRequired
+  selectPage: PropTypes.func.isRequired,
 };
 
 export default Bullets;
