@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { css } from "emotion";
+import { css } from "react-emotion";
 
 import Page from "../base/Page";
 import GitHubLogo from "../base/GitHubLogo";

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { css } from "emotion";
+import { css } from "react-emotion";
 import smoothScroll from "smoothscroll";
 
 import Bullet from "../base/Bullet";

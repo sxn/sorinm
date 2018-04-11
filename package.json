@@ -12,17 +12,21 @@
   },
   "dependencies": {
     "@zeit/next-typescript": "^0.1.1",
+    "babel-plugin-emotion": "^9.1.0",
     "classnames": "^2.2.5",
     "emotion": "^9.1.1",
+    "emotion-server": "^9.1.1",
+    "express": "^4.16.3",
     "next": "^5.1.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
+    "react-emotion": "^9.1.1",
     "smoothscroll": "^0.4.0",
     "tslib": "^1.9.0",
     "typescript": "^2.8.1"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start"
   }

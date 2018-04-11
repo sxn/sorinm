@@ -1,4 +1,8 @@
-import { injectGlobal } from "emotion";
+import { hydrate, injectGlobal } from "emotion";
+
+if (typeof window !== "undefined") {
+  hydrate(window.__NEXT_DATA__.ids);
+}
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:300|Oswald:300,400');
