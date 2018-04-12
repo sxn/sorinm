@@ -24,6 +24,12 @@ export default ({ children }) => (
         }}
       />
     </Head>
+    <style
+      dangerouslySetInnerHTML={{
+        __html: `@import
+      url('https://fonts.googleapis.com/css?family=family=Open+Sans:400,700|Open+Sans+Condensed:300|Oswald:300,400');`,
+      }}
+    />
     {children}
   </Fragment>
 );

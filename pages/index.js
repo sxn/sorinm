@@ -5,8 +5,6 @@ if (typeof window !== "undefined") {
 }
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:300|Oswald:300,400');
-
   body {
     margin: 0;
     padding: 0;
