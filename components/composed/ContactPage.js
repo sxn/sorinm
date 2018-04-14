@@ -28,7 +28,7 @@ const styles = {
   `,
   picture: css`
     background-size: cover;
-    background-image: url("/static/ContactPage.jpg");
+    background-image: url("/static/sorin.jpg");
     height: 23em;
     width: 23em;
     border-radius: 50%;
