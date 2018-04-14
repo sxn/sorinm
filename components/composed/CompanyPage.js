@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { css } from "react-emotion";
+import { css } from "emotion";
 
 import Page from "../base/Page";
 import UtcnLogo from "../base/UtcnLogo";
@@ -103,7 +103,7 @@ const CompanyPage = ({
     <div className={styles.rightContainer}>
       <div className={styles.descriptionContainer}>
         {description.map((row, index) => (
-          <p className={styles.description} key={slug + "-description-" + index}>
+          <p className={styles.description} key={`${slug}-description-${index}`}>
             {row}
           </p>
         ))}

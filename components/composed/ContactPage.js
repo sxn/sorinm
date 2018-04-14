@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { css } from "react-emotion";
+import { css } from "emotion";
 
 import Page from "../base/Page";
 import GitHubLogo from "../base/GitHubLogo";
@@ -28,10 +28,13 @@ const styles = {
   `,
   picture: css`
     background-size: cover;
+    background-image: url("/static/ContactPage.jpg");
     height: 23em;
+    width: 23em;
     border-radius: 50%;
     @media only screen and (max-width: 1024px) {
       height: 10em;
+      width: 10em;
     }
   `,
   rightContainer: css`
@@ -66,7 +69,7 @@ const ContactPage = () => (
   <Page backgroundColor={"#ffffff"}>
     <div className={styles.container}>
       <div className={styles.leftContainer}>
-        <img className={styles.picture} src="/static/ContactPage.jpg" />
+        <div className={styles.picture} />
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.description}>

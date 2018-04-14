@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { css } from "react-emotion";
+import { css } from "emotion";
 import smoothScroll from "smoothscroll";
 
 import Bullet from "../base/Bullet";
@@ -18,22 +18,24 @@ const styles = {
   `,
 };
 
-class Bullets extends Component {
+export default class Bullets extends Component {
   state = { selectedPage: 0 };
 
-  componentDidMount = () => {
-    document.addEventListener("scroll", this.handleScroll);
+  componentDidMount() {
+    this.updateSelected();
+    document.addEventListener("scroll", this.updateSelected);
     document.addEventListener("keydown", this.disableArrows);
     document.addEventListener("keyup", this.handleArrowNavigation);
-  };
+  }
 
-  handleScroll = () => {
-    const { selectedPage } = this.state;
-    const currentPage = Math.round(window.scrollY / window.innerHeight);
+  componentWillUnmount() {
+    document.removeEventListener("scroll", this.updateSelected);
+    document.removeEventListener("keydown", this.disableArrows);
+    document.removeEventListener("keyup", this.handleArrowNavigation);
+  }
 
-    if (currentPage !== selectedPage) {
-      this.setState({ selectedPage: currentPage });
-    }
+  updateSelected = () => {
+    this.setState({ selectedPage: Math.round(window.scrollY / window.innerHeight) });
   };
 
   disableArrows = e => {
@@ -45,18 +47,18 @@ class Bullets extends Component {
     }
   };
 
-  handleArrowNavigation = e => {
+  handleArrowNavigation = ({ code }) => {
     const { selectedPage } = this.state;
 
-    const upArrowPressed = e.code === "ArrowUp";
-    const kPressed = e.code === "KeyK";
+    const upArrowPressed = code === "ArrowUp";
+    const kPressed = code === "KeyK";
 
     if (upArrowPressed || kPressed) {
       smoothScroll((selectedPage - 1) * window.innerHeight);
     }
 
-    const downArrowPressed = e.code === "ArrowDown";
-    const jPressed = e.code === "KeyJ";
+    const downArrowPressed = code === "ArrowDown";
+    const jPressed = code === "KeyJ";
 
     if (downArrowPressed || jPressed) {
       smoothScroll((selectedPage + 1) * window.innerHeight);
@@ -71,7 +73,7 @@ class Bullets extends Component {
       <div className={styles.bullets}>
         {[...Array(count)].map((_, index) => (
           <Bullet
-            key={"bullet-" + index}
+            key={`bullet-${index}`}
             index={index}
             active={index === selectedPage}
             selectedPage={selectedPage}
@@ -87,5 +89,3 @@ class Bullets extends Component {
 Bullets.propTypes = {
   count: PropTypes.number.isRequired,
 };
-
-export default Bullets;

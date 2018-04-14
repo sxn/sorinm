@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
-import AppState from "../../utils/data";
 import Bullets from "../composed/Bullets";
 import ContactPage from "../composed/ContactPage";
 import WelcomePage from "../composed/WelcomePage";

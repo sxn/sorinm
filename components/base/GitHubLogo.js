@@ -1,9 +1,13 @@
 import React from "react";
-import { css } from "react-emotion";
+import { css } from "emotion";
 
 const styles = {
   logo: css`
     height: 6em;
+    width: auto;
+    @media only screen and (max-width: 1024px) {
+      height: 3em;
+    }
   `,
 };
 
