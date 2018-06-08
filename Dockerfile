@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:9-alpine
 
 ADD . /src
 WORKDIR /src
