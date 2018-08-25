@@ -1,6 +1,23 @@
 export default {
   pages: [
     {
+      backgroundColor: "#57c0dc",
+      color: "#ffffff",
+      slug: "ottonova",
+      name: "ottonova",
+      url: "https://ottonova.de/",
+      start: "May. 2017",
+      end: "today",
+      title: "Senior JS Developer",
+      description: [
+        "ottonova is the first completely digital health insurance in Germany.",
+        "Activity:",
+        "- developing customer-facing and internal applications using Angular6",
+        "- building microservices using NodeJS & Express, deployed to Amazon ECS",
+        "The technology stack primarily comprises TypeScript (Angular6), NodeJS (Express), PHP (Symfony)",
+      ],
+    },
+    {
       backgroundColor: "#203049",
       color: "#ffffff",
       slug: "internations",
@@ -16,8 +33,8 @@ export default {
         "- normalizing the user data model, developing tooling required to do an online migration of the existing 1.5M users to the new model and running/supervising the entire process",
         "- advocating SSL and leading the efforts necessary to make it ubiquitous",
         "- taking part in designing the REST API used by the web & mobile apps and leading the team tasked with implementing it",
-        "- being the sole release manager for the better part of two years",
-        "The technology stack comprised PHP (Symfony2, Drupal and Magento), Backbone.js, Python, RabbitMQ, Apache Solr, MySQL & Redis.",
+        "- being the release manager for the better part of two years",
+        "The technology stack comprised PHP (Symfony, Drupal and Magento), React, Backbone.js, RabbitMQ, Apache Solr, MySQL & Redis.",
       ],
     },
     {

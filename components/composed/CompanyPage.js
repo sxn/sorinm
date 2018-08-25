@@ -8,6 +8,7 @@ import ArobsLogo from "../base/ArobsLogo";
 import AgilioLogo from "../base/AgilioLogo";
 import HoneyTracksLogo from "../base/HoneyTracksLogo";
 import InterNationsLogo from "../base/InterNationsLogo";
+import OttonovaLogo from "../base/OttonovaLogo";
 import Timeline from "../composed/Timeline";
 
 const styles = {
@@ -25,8 +26,9 @@ const styles = {
     display: flex;
     flex-direction: column;
   `,
-  logoLink: css`
+  companyLink: css`
     fill: #ffffff;
+    text-decoration: none;
   `,
   companyName: css`
     font-size: 2.1em;
@@ -72,6 +74,7 @@ const logoMap = {
   agilio: <AgilioLogo />,
   honeytracks: <HoneyTracksLogo />,
   internations: <InterNationsLogo />,
+  ottonova: <OttonovaLogo />,
 };
 
 const CompanyPage = ({
@@ -89,11 +92,13 @@ const CompanyPage = ({
     <div className={styles.leftContainer}>
       <div className={styles.company}>
         <div className={styles.logo}>
-          <a className={styles.logoLink} href={url} target="_blank" rel="noopener">
+          <a className={styles.companyLink} href={url} target="_blank" rel="noopener">
             {logoMap[slug]}
+            <p className={styles.companyName} style={{ color }}>
+              {name}
+            </p>
           </a>
         </div>
-        <p className={styles.companyName}>{name}</p>
         <p className={styles.companyTitle}>{title}</p>
       </div>
     </div>

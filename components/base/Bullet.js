@@ -33,7 +33,7 @@ const Bullet = ({ index, active, isLastPage, selectedPage, pageCount, onClick })
       className={css`
         ${styles.bullet};
         ${active ? styles.active : ""};
-        ${selectedPage === pageCount - 1 ? styles.black : ""};
+        ${selectedPage === pageCount - 1 || selectedPage === 0 ? styles.black : ""};
       `}
       onClick={() => onClick(index)}
     />

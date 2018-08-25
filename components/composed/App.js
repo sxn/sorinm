@@ -10,7 +10,9 @@ const App = ({ pages }) => (
   <Fragment>
     <Bullets count={pages.length + 2} />
     <WelcomePage />
-    {pages.map(page => <CompanyPage key={page.slug} {...page} />)}
+    {pages.map(page => (
+      <CompanyPage key={page.slug} {...page} />
+    ))}
     <ContactPage />
   </Fragment>
 );

@@ -73,7 +73,7 @@ const ContactPage = () => (
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.description}>
-          <p className={styles.text}>Let's work together!</p>
+          <p className={styles.text}>Let's talk!</p>
           <div className={styles.methods}>
             <div>
               <a className={styles.link} href="mailto:hello@sorinmuntean.ro?Subject=Hello">

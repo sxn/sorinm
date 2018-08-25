@@ -1,5 +1,6 @@
 import React from "react";
 import { css } from "emotion";
+import smoothScroll from "smoothscroll";
 
 import Page from "../base/Page";
 
@@ -16,16 +17,26 @@ const styles = {
     font-size: 7em;
     margin: 0;
   `,
+  chevron: css`
+    position: absolute;
+    bottom: 5%;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0.1em 0.1em 0 0;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    transform: rotate(135deg);
+  `,
 };
 
 const WelcomePage = () => (
-  <Page backgroundColor={"#d42d38"} color={"#ffffff"}>
+  <Page color={"#d42d38"} backgroundColor={"#ffffff"}>
     <div className={styles.welcome}>
       <p className={styles.largeText}>Hi!</p>
       <p className={styles.text}>My name's Sorin.</p>
-      <p className={styles.text}>I live in Munich.</p>
-      <p className={styles.text}>I like exercising and scuba diving.</p>
-      <p className={styles.text}>And I'm a software developer.</p>
+      <p className={styles.text}>I'm a software developer from Munich.</p>
+      <span className={styles.chevron} onClick={() => smoothScroll(1 * window.innerHeight)} />
     </div>
   </Page>
 );
