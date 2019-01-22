@@ -12,9 +12,9 @@ export default {
       description: [
         "ottonova is the first completely digital health insurance in Germany.",
         "Activity:",
-        "- developing customer-facing and internal applications using Angular6",
+        "- developing customer-facing and internal applications using Angular",
         "- building microservices using NodeJS & Express, deployed to Amazon ECS",
-        "The technology stack primarily comprises TypeScript (Angular6), NodeJS (Express), PHP (Symfony)",
+        "The technology stack primarily comprises TypeScript (Angular), NodeJS (Express), PHP (Symfony)",
       ],
     },
     {
