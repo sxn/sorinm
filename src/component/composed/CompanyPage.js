@@ -7,6 +7,7 @@ import ArobsLogo from "component/base/ArobsLogo";
 import AgilioLogo from "component/base/AgilioLogo";
 import HoneyTracksLogo from "component/base/HoneyTracksLogo";
 import InterNationsLogo from "component/base/InterNationsLogo";
+import OttonovaLogo from "component/base/OttonovaLogo";
 import Timeline from "component/composed/Timeline";
 import "./CompanyPage.css";
 
@@ -16,6 +17,7 @@ const logoMap = {
   agilio: <AgilioLogo />,
   honeytracks: <HoneyTracksLogo />,
   internations: <InterNationsLogo />,
+  ottonova: <OttonovaLogo />,
 };
 
 const CompanyPage = ({
@@ -33,7 +35,7 @@ const CompanyPage = ({
     <div className="CompanyPage-LeftContainer">
       <div className="CompanyPage-Company">
         <div className="CompanyPage-Logo">
-          <a className="CompanyPage-LogoLink" href={url} target="_blank" rel="noopener">
+          <a className="CompanyPage-LogoLink" href={url} target="_blank" rel="noopener noreferrer">
             {logoMap[slug]}
           </a>
         </div>

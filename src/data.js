@@ -2,6 +2,23 @@ export default {
   currentPage: 0,
   pages: [
     {
+      backgroundColor: "#57c0dc",
+      color: "#ffffff",
+      slug: "ottonova",
+      name: "ottonova",
+      url: "https://ottonova.de/",
+      start: "May. 2017",
+      end: "today",
+      title: "Senior JS Developer",
+      description: [
+        "ottonova is the first completely digital health insurance in Germany.",
+        "Activity:",
+        "- developing customer-facing and internal applications using Angular",
+        "- building microservices using NodeJS & Express, deployed to Amazon ECS",
+        "The technology stack primarily comprises TypeScript (Angular), NodeJS (Express), PHP (Symfony)",
+      ],
+    },
+    {
       backgroundColor: "#203049",
       color: "#ffffff",
       slug: "internations",
