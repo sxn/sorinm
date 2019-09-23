@@ -4,9 +4,7 @@
   "version": "2.0.0",
   "private": true,
   "devDependencies": {
-    "gh-pages": "^2.1.1",
-    "react-scripts": "^3.1.2",
-    "redux-logger": "^3.0.6"
+    "react-scripts": "^3.1.2"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -20,10 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages --dist build --branch master"
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
