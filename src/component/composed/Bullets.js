@@ -13,11 +13,11 @@ class Bullets extends Component {
   };
 
   handleScroll = () => {
-    const { selectedPage, selectPage } = this.props;
+    const { currentPageIndex, selectPage } = this.props;
 
     const currentPage = Math.round(window.scrollY / window.innerHeight);
 
-    if (currentPage !== selectedPage) {
+    if (currentPage !== currentPageIndex) {
       selectPage(currentPage);
     }
   };
@@ -32,20 +32,20 @@ class Bullets extends Component {
   };
 
   handleArrowNavigation = e => {
-    const { selectedPage } = this.props;
+    const { currentPageIndex } = this.props;
 
     const upArrowPressed = e.code === "ArrowUp";
     const kPressed = e.code === "KeyK";
 
     if (upArrowPressed || kPressed) {
-      smoothScroll((selectedPage - 1) * window.innerHeight);
+      smoothScroll((currentPageIndex - 1) * window.innerHeight);
     }
 
     const downArrowPressed = e.code === "ArrowDown";
     const jPressed = e.code === "KeyJ";
 
     if (downArrowPressed || jPressed) {
-      smoothScroll((selectedPage + 1) * window.innerHeight);
+      smoothScroll((currentPageIndex + 1) * window.innerHeight);
     }
   };
 

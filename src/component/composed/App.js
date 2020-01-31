@@ -8,7 +8,7 @@ import CompanyPage from "component/composed/CompanyPage";
 
 const App = ({ pages }) => (
   <div className="App">
-    <Bullets count={pages.length + 2} />
+    <Bullets count={pages.length} />
 
     {pages.map(page => {
       if (page.type === "welcome") {
