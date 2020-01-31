@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "./InterNationsLogo.css";
 
-const InterNationsLogo = ({ includeText }) => {
+const InterNationsLogo = ({ fillColor, includeText }) => {
   if (includeText) {
     return (
       <svg className="InterNationsLogo" viewBox="0 0 402 78">
@@ -20,10 +20,12 @@ const InterNationsLogo = ({ includeText }) => {
 };
 
 InterNationsLogo.propTypes = {
+  fillColor: PropTypes.string.isRequired,
   includeText: PropTypes.bool.isRequired,
 };
 
 InterNationsLogo.defaultProps = {
+  fillColor: "#ffffff",
   includeText: false,
 };
 

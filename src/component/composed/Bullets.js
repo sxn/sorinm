@@ -50,7 +50,7 @@ class Bullets extends Component {
   };
 
   render = () => {
-    const { count, selectedPage } = this.props;
+    const { count, currentPageIndex, currentPage } = this.props;
 
     return (
       <div className="Bullets">
@@ -58,9 +58,8 @@ class Bullets extends Component {
           <Bullet
             key={"bullet-" + index}
             index={index}
-            active={index === selectedPage}
-            selectedPage={selectedPage}
-            pageCount={count}
+            active={index === currentPageIndex}
+            color={currentPage ? currentPage.color : undefined}
             onClick={page => smoothScroll(page * window.innerHeight)}
           />
         ))}
@@ -71,7 +70,8 @@ class Bullets extends Component {
 
 Bullets.propTypes = {
   count: PropTypes.number.isRequired,
-  selectedPage: PropTypes.number.isRequired,
+  currentPage: PropTypes.object,
+  currentPageIndex: PropTypes.number.isRequired,
   selectPage: PropTypes.func.isRequired,
 };
 

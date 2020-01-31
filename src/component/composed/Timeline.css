@@ -5,14 +5,6 @@
   align-items: stretch;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    90deg,
-    transparent calc(50% - 0.81px),
-    #ffffff calc(50% - 0.8px),
-    #ffffff calc(50% + 0.8px),
-    transparent calc(50% + 0.81px),
-    transparent 100%
-  );
 }
 
 .Timeline-DateContainer {

@@ -8,15 +8,11 @@
   transition: opacity 0.35s;
   border-radius: 0.7em;
   margin-top: 0.7em;
+  transition: opacity 1s;
 }
 
 .Bullet.active {
   opacity: 1;
-}
-
-.Bullet.black {
-  transition: opacity 1s;
-  background: #000000;
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {

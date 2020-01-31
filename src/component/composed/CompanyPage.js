@@ -10,14 +10,35 @@ import InterNationsLogo from "component/base/InterNationsLogo";
 import OttonovaLogo from "component/base/OttonovaLogo";
 import Timeline from "component/composed/Timeline";
 import "./CompanyPage.css";
+import KiLabsLogo from "component/base/KiLabsLogo";
 
-const logoMap = {
-  utcn: <UtcnLogo />,
-  arobs: <ArobsLogo />,
-  agilio: <AgilioLogo />,
-  honeytracks: <HoneyTracksLogo />,
-  internations: <InterNationsLogo />,
-  ottonova: <OttonovaLogo />,
+const getLogo = (slug, color) => {
+  switch (slug) {
+    case "utcn": {
+      return <UtcnLogo fillColor={color} />;
+    }
+    case "arobs": {
+      return <ArobsLogo fillColor={color} />;
+    }
+    case "agilio": {
+      return <AgilioLogo fillColor={color} />;
+    }
+    case "honeytracks": {
+      return <HoneyTracksLogo fillColor={color} />;
+    }
+    case "internations": {
+      return <InterNationsLogo fillColor={color} />;
+    }
+    case "ottonova": {
+      return <OttonovaLogo fillColor={color} />;
+    }
+    case "ki-labs": {
+      return <KiLabsLogo fillColor={color} />;
+    }
+    default: {
+      return <React.Fragment />;
+    }
+  }
 };
 
 const CompanyPage = ({
@@ -36,7 +57,7 @@ const CompanyPage = ({
       <div className="CompanyPage-Company">
         <div className="CompanyPage-Logo">
           <a className="CompanyPage-LogoLink" href={url} target="_blank" rel="noopener noreferrer">
-            {logoMap[slug]}
+            {getLogo(slug, color)}
           </a>
         </div>
         <p className="CompanyPage-CompanyName">{name}</p>
@@ -44,7 +65,7 @@ const CompanyPage = ({
       </div>
     </div>
 
-    <Timeline start={start} end={end} color={backgroundColor} />
+    <Timeline start={start} end={end} textColor={backgroundColor} backgroundColor={color} />
 
     <div className="CompanyPage-RightContainer">
       <div className="CompanyPage-DescriptionContainer">

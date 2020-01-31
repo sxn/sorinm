@@ -4,21 +4,23 @@ import classNames from "classnames";
 
 import "./Bullet.css";
 
-const Bullet = ({ index, active, isLastPage, selectedPage, pageCount, onClick }) => {
+const Bullet = ({ index, active, color, onClick }) => {
   const classes = classNames("Bullet", {
     active: active,
-    black: selectedPage === pageCount - 1,
   });
 
-  return <div className={classes} onClick={() => onClick(index)} />;
+  return <div className={classes} style={{ background: color }} onClick={() => onClick(index)} />;
 };
 
 Bullet.propTypes = {
   index: PropTypes.number.isRequired,
   active: PropTypes.bool.isRequired,
-  selectedPage: PropTypes.number.isRequired,
-  pageCount: PropTypes.number.isRequired,
+  color: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+};
+
+Bullet.defaultProps = {
+  color: "#ffffff",
 };
 
 export default Bullet;

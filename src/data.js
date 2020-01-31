@@ -1,14 +1,38 @@
 export default {
-  currentPage: 0,
+  currentPageIndex: 0,
   pages: [
     {
+      type: "welcome",
+      slug: "welcome",
+      color: "#ffffff",
+    },
+    {
+      type: "company",
+      backgroundColor: "#ffcc00",
+      color: "#000000",
+      slug: "ki-labs",
+      name: "KI labs",
+      url: "https://ki-labs.com/",
+      start: "Feb. 2019",
+      end: "today",
+      title: "Full-Stack Software Engineer",
+      description: [
+        "KI labs is an IT consulting firm, part of KI group.",
+        "Since joining, I've worked on three products:",
+        "- a vehicle data enrichment and online sale-readiness assessment platform (VueJS, TypeScript, Python w/ Flask)",
+        "- an online marketplace for continuing professional development programs, aimed at professionals in the healthcare industry (VueJS, TypeScript)",
+        "- a cloud computing services platform (ReactJS)",
+      ],
+    },
+    {
+      type: "company",
       backgroundColor: "#57c0dc",
       color: "#ffffff",
       slug: "ottonova",
       name: "ottonova",
       url: "https://ottonova.de/",
-      start: "May. 2017",
-      end: "today",
+      start: "May 2017",
+      end: "Jan. 2019",
       title: "Senior JS Developer",
       description: [
         "ottonova is the first completely digital health insurance in Germany.",
@@ -19,6 +43,7 @@ export default {
       ],
     },
     {
+      type: "company",
       backgroundColor: "#203049",
       color: "#ffffff",
       slug: "internations",
@@ -39,8 +64,9 @@ export default {
       ],
     },
     {
+      type: "company",
       backgroundColor: "#fea104",
-      color: "#ffffff",
+      color: "#000000",
       slug: "honeytracks",
       name: "HoneyTracks GmbH",
       url: "https://honeytracks.com/",
@@ -57,6 +83,7 @@ export default {
       ],
     },
     {
+      type: "company",
       backgroundColor: "#0176b0",
       color: "#ffffff",
       slug: "agilio",
@@ -75,6 +102,7 @@ export default {
       ],
     },
     {
+      type: "company",
       backgroundColor: "#6dbe5d",
       color: "#ffffff",
       slug: "arobs",
@@ -89,6 +117,7 @@ export default {
       ],
     },
     {
+      type: "company",
       backgroundColor: "#bc171d",
       color: "#ffffff",
       slug: "utcn",
@@ -102,6 +131,11 @@ export default {
         "The curriculum is based on the ACM curriculum and syllabi guidelines for computer science and engineering.",
         "Their bachelor's degree programmes are taught in either Romanian or English, folow the Bologna system and comprise 240 ECTS points, spread throughout 8 semesters.",
       ],
+    },
+    {
+      type: "contact",
+      slug: "contact",
+      color: "#000000",
     },
   ],
 };

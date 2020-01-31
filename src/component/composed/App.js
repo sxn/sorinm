@@ -10,26 +10,32 @@ const App = ({ pages }) => (
   <div className="App">
     <Bullets count={pages.length + 2} />
 
-    <WelcomePage />
+    {pages.map(page => {
+      if (page.type === "welcome") {
+        return <WelcomePage key={page.slug} />;
+      }
+      if (page.type === "contact") {
+        return <ContactPage key={page.slug} />;
+      }
 
-    {pages.map(page => <CompanyPage key={page.slug} {...page} />)}
-
-    <ContactPage />
+      return <CompanyPage key={page.slug} {...page} />;
+    })}
   </div>
 );
 
 App.propTypes = {
   pages: PropTypes.arrayOf(
     PropTypes.shape({
-      backgroundColor: PropTypes.string,
-      color: PropTypes.string.isRequired,
-      description: PropTypes.arrayOf(PropTypes.string).isRequired,
-      end: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
       slug: PropTypes.string.isRequired,
-      start: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+      backgroundColor: PropTypes.string,
+      description: PropTypes.arrayOf(PropTypes.string),
+      end: PropTypes.string,
+      name: PropTypes.string,
+      start: PropTypes.string,
+      title: PropTypes.string,
+      url: PropTypes.string,
     }),
   ).isRequired,
 };

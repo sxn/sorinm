@@ -9,8 +9,7 @@ const WelcomePage = () => (
       <p className="WelcomePage-LargeText">Hi!</p>
       <p className="WelcomePage-Text">My name's Sorin.</p>
       <p className="WelcomePage-Text">I live in Munich.</p>
-      <p className="WelcomePage-Text">I like exercising and scuba diving.</p>
-      <p className="WelcomePage-Text">And I'm a software developer.</p>
+      <p className="WelcomePage-Text">I like programming.</p>
     </div>
   </Page>
 );

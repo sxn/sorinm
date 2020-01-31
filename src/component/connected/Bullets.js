@@ -1,12 +1,13 @@
 import { connect } from "react-redux";
 
-import { getSelectedPage } from "selectors";
+import { getCurrentPageIndex, getCurrentPage } from "selectors";
 import { selectPage } from "actions";
 import Bullets from "component/composed/Bullets";
 
 export default connect(
   state => ({
-    selectedPage: getSelectedPage(state),
+    currentPage: getCurrentPage(state),
+    currentPageIndex: getCurrentPageIndex(state),
   }),
   { selectPage },
 )(Bullets);

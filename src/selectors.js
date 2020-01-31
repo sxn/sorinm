@@ -1,3 +1,5 @@
 export const getPages = state => state.pages;
 
-export const getSelectedPage = state => state.currentPage;
+export const getCurrentPageIndex = state => state.currentPageIndex;
+
+export const getCurrentPage = state => state.pages[state.currentPageIndex] || null;
