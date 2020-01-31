@@ -55,11 +55,9 @@ export default {
       description: [
         "At InterNations I took part in the relaunch of their product, working in a distributed team located in Munich and Vilnius.",
         "Notable contributions include:",
-        "- leading the relaunch of the product's start page, header and footer, forum, user profile and settings pages",
-        "- normalizing the user data model, developing tooling required to do an online migration of the existing 1.5M users to the new model and running/supervising the entire process",
-        "- advocating SSL and leading the efforts necessary to make it ubiquitous",
-        "- taking part in designing the REST API used by the web & mobile apps and leading the team tasked with implementing it",
-        "- being the sole release manager for the better part of two years",
+        "- relaunching the product's start, user profile, forum and settings pages",
+        "- normalizing the user data model, developing tooling required to migrate the existing 1.5M users to the new model",
+        "- designing and implementing the API used by the web & mobile apps",
         "The technology stack comprised PHP (Symfony2, Drupal and Magento), Backbone.js, Python, RabbitMQ, Apache Solr, MySQL & Redis.",
       ],
     },
@@ -76,9 +74,8 @@ export default {
       description: [
         "During my time at HoneyTracks I've worked on the company's real-time analytics solution and the various tools built around it.",
         "Most notably:",
-        "- fixing and improving the in-house PHP framework and its drivers, such as moving from Memcache to Memcached",
-        "- improving scalability. This was done by introducing workers (and a daemon that controlled them) and delegating the data fetching process to them.",
-        "- improving chart loading time by analyzing queries necessary to build customers' charts in order to figure out which were more time-consuming. Those which went over a specified threshold were then automatically prefetched.",
+        "- improving the in-house PHP framework and its various drivers (Memcached, beanstalkd)",
+        "- introducing data fetching workers so chart data can be fetched in parallel and ahead of time",
         "The technology stack comprised PHP, Backbone.js, Beanstalkd, RabbitMQ & MySQL.",
       ],
     },
@@ -95,10 +92,9 @@ export default {
       description: [
         "My main activity at Agilio (formerly Garessio) was developing web applications. The projects I have worked on were mostly based on the CodeIgniter and Symfony2 frameworks.",
         "Projects involved in:",
-        "- various internal tools (Python)",
-        "- the company's homepage (jQuery, Symfony2)",
         "- Stipz, a (now defunct) video website that allowed users to (for a fee) stream video, host or attend webinars. Payment was handled using an in-house PayPal integration. (CodeIgniter, jQuery, Flash Media Server, MySQL)",
         "- Nebo Learning, an enterprise e-learning platform. (Python, Oracle Database)",
+        "- Building the company's homepage. (jQuery)",
       ],
     },
     {
