@@ -15,7 +15,7 @@ export default {
       url: "https://ki-labs.com/",
       start: "Feb. 2019",
       end: "today",
-      title: "Full-Stack Software Engineer",
+      title: "Programmer",
       description: [
         "KI labs is an IT consulting firm, part of KI group.",
         "Since joining, I've worked on three products:",
@@ -33,7 +33,7 @@ export default {
       url: "https://ottonova.de/",
       start: "May 2017",
       end: "Jan. 2019",
-      title: "Senior JS Developer",
+      title: "Programmer",
       description: [
         "ottonova is the first completely digital health insurance in Germany.",
         "Activity:",
@@ -51,7 +51,7 @@ export default {
       url: "https://www.internations.org/",
       start: "Oct. 2013",
       end: "Apr. 2016",
-      title: "Software Developer",
+      title: "Programmer",
       description: [
         "At InterNations I took part in the relaunch of their product, working in a distributed team located in Munich and Vilnius.",
         "Notable contributions include:",
@@ -70,7 +70,7 @@ export default {
       url: "https://honeytracks.com/",
       start: "Oct. 2012",
       end: "Oct. 2013",
-      title: "Software Developer",
+      title: "Programmer",
       description: [
         "During my time at HoneyTracks I've worked on the company's real-time analytics solution and the various tools built around it.",
         "Most notably:",
@@ -88,7 +88,7 @@ export default {
       url: "https://www.agilio.eu/",
       start: "Sep. 2011",
       end: "June 2012",
-      title: "Software Developer",
+      title: "Programmer",
       description: [
         "My main activity at Agilio (formerly Garessio) was developing web applications. The projects I have worked on were mostly based on the CodeIgniter and Symfony2 frameworks.",
         "Projects involved in:",
