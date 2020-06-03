@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
 
   <title>Sorin Muntean</title>
 </head>
 
 <body>
   <div id="root"></div>
-</body>
 
+  <script type="text/javascript">
+      (function (n, e, m, E, a, $) {
+          n[E] =
+              n[E] ||
+              function () {
+                  (n[E].q = n[E].q || []).push(arguments);
+              };
+          $ = e.createElement(m);
+          $.id = E;
+          $.src = a;
+          $.async = 1;
+          m = e.getElementsByTagName(m)[0];
+          m.parentNode.insertBefore($, m);
+      })(window, document, "script", "nemea", "https://sorin.nemea.co/track.js");
+
+      nemea("view");
+  </script>
+</body>
 </html>
