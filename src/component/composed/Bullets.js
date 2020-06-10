@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import smoothScroll from "smoothscroll";
 
 import Bullet from "../base/Bullet";
 import "./Bullets.css";
@@ -38,14 +37,14 @@ class Bullets extends Component {
     const kPressed = e.code === "KeyK";
 
     if (upArrowPressed || kPressed) {
-      smoothScroll((currentPageIndex - 1) * window.innerHeight);
+      scroll({ top: (currentPageIndex - 1) * window.innerHeight, behavior: "smooth" });
     }
 
     const downArrowPressed = e.code === "ArrowDown";
     const jPressed = e.code === "KeyJ";
 
     if (downArrowPressed || jPressed) {
-      smoothScroll((currentPageIndex + 1) * window.innerHeight);
+      scroll({ top: (currentPageIndex + 1) * window.innerHeight, behavior: "smooth" });
     }
   };
 
@@ -60,7 +59,7 @@ class Bullets extends Component {
             index={index}
             active={index === currentPageIndex}
             color={currentPage ? currentPage.color : undefined}
-            onClick={(page) => smoothScroll(page * window.innerHeight)}
+            onClick={(page) => scroll({ top: page * window.innerHeight, behavior: "smooth" })}
           />
         ))}
       </div>
