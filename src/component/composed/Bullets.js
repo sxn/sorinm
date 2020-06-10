@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import smoothScroll from "smoothscroll";
 
-import Bullet from "component/base/Bullet";
+import Bullet from "../base/Bullet";
 import "./Bullets.css";
 
 class Bullets extends Component {
@@ -22,7 +22,7 @@ class Bullets extends Component {
     }
   };
 
-  disableArrows = e => {
+  disableArrows = (e) => {
     const upArrowPressed = e.code === "ArrowUp";
     const downArrowPressed = e.code === "ArrowDown";
 
@@ -31,7 +31,7 @@ class Bullets extends Component {
     }
   };
 
-  handleArrowNavigation = e => {
+  handleArrowNavigation = (e) => {
     const { currentPageIndex } = this.props;
 
     const upArrowPressed = e.code === "ArrowUp";
@@ -60,7 +60,7 @@ class Bullets extends Component {
             index={index}
             active={index === currentPageIndex}
             color={currentPage ? currentPage.color : undefined}
-            onClick={page => smoothScroll(page * window.innerHeight)}
+            onClick={(page) => smoothScroll(page * window.innerHeight)}
           />
         ))}
       </div>

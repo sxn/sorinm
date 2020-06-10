@@ -1,6 +1,6 @@
 import React from "react";
 
-import Page from "component/base/Page";
+import Page from "../base/Page";
 import "./WelcomePage.css";
 
 const WelcomePage = () => (

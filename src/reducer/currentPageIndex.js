@@ -1,4 +1,4 @@
-import { SELECT_PAGE } from "actions";
+import { SELECT_PAGE } from "../actions";
 
 const currentPageIndex = (state = 0, action) => {
   switch (action.type) {

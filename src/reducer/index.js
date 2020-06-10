@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
 
-import pages from "reducer/pages";
-import currentPageIndex from "reducer/currentPageIndex";
+import currentPageIndex from "./currentPageIndex";
+import pages from "./pages";
 
 export default combineReducers({
-  pages,
   currentPageIndex,
+  pages,
 });

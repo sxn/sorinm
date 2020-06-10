@@ -1,9 +1,9 @@
 import React from "react";
 
-import Page from "component/base/Page";
-import GitHubLogo from "component/base/GitHubLogo";
-import LinkedInLogo from "component/base/LinkedInLogo";
-import MailLogo from "component/base/MailLogo";
+import Page from "../base/Page";
+import GitHubLogo from "../base/GitHubLogo";
+import LinkedInLogo from "../base/LinkedInLogo";
+import MailLogo from "../base/MailLogo";
 import "./ContactPage.css";
 
 const ContactPage = () => (

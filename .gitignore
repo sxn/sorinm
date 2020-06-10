@@ -5,6 +5,7 @@ node_modules
 coverage
 
 # misc
+.cache
 .DS_Store
 .env
 .dumbjump

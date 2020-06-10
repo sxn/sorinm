@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Page from "component/base/Page";
-import UtcnLogo from "component/base/UtcnLogo";
-import ArobsLogo from "component/base/ArobsLogo";
-import AgilioLogo from "component/base/AgilioLogo";
-import HoneyTracksLogo from "component/base/HoneyTracksLogo";
-import InterNationsLogo from "component/base/InterNationsLogo";
-import OttonovaLogo from "component/base/OttonovaLogo";
-import Timeline from "component/composed/Timeline";
+import Page from "../base/Page";
+import UtcnLogo from "../base/UtcnLogo";
+import ArobsLogo from "../base/ArobsLogo";
+import AgilioLogo from "../base/AgilioLogo";
+import HoneyTracksLogo from "../base/HoneyTracksLogo";
+import InterNationsLogo from "../base/InterNationsLogo";
+import OttonovaLogo from "../base/OttonovaLogo";
+import Timeline from "../composed/Timeline";
+import KiLabsLogo from "../base/KiLabsLogo";
 import "./CompanyPage.css";
-import KiLabsLogo from "component/base/KiLabsLogo";
 
 const getLogo = (slug, color) => {
   switch (slug) {
@@ -41,17 +41,7 @@ const getLogo = (slug, color) => {
   }
 };
 
-const CompanyPage = ({
-  backgroundColor,
-  color,
-  description,
-  end,
-  name,
-  slug,
-  start,
-  title,
-  url,
-}) => (
+const CompanyPage = ({ backgroundColor, color, description, end, name, slug, start, title, url }) => (
   <Page backgroundColor={backgroundColor} color={color}>
     <div className="CompanyPage-LeftContainer">
       <div className="CompanyPage-Company">
