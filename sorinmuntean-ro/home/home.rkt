@@ -1,10 +1,13 @@
 #lang racket/base
 
 (require racket/contract
+         racket/path
+         racket/runtime-path
          xml)
 
 (provide home-title
          make-home)
+
 
 (define home-title "sorinmuntean.ro")
 
@@ -258,7 +261,7 @@
            (div ([class "ContactScreen-RightContainer"])
                 (div ([class "ContactScreen-Description"])
                      (p ([class "ContactScreen-Text"])
-                        "If you want to get in touch, here are a few channels:")
+                        "If you want to get in touch, here's how:")
                      (div ([class "ContactScreen-Methods"])
                           ,mail-logo
                           ,github-logo
@@ -287,11 +290,11 @@
       #:description (listof string?)
       xexpr?)
 
-  (define (timeline-background color)
+  (define (timeline-background the-color)
     (format
      "background-image: linear-gradient(90deg, transparent calc(50% - 0.81px), ~a calc(50% - 0.8px), ~a calc(50% + 0.8px), transparent calc(50% + 0.81px), transparent 100%)"
-     color
-     color))
+     the-color
+     the-color))
 
   (define content
     (list
@@ -305,8 +308,7 @@
                 (p ([class "CompanyScreen-CompanyTitle"])
                    ,title)))
 
-     `(div ([class "Timeline"])
-           [style ,(timeline-background color)]
+     `(div ([class "Timeline"] [style ,(timeline-background color)])
            (div ([class "Timeline-DateContainer Timeline-Top"]
                  [style ,(format "color: ~a; background-color: ~a" background-color color)])
                 (p ([class "Timeline-Date"]) ,end-date))

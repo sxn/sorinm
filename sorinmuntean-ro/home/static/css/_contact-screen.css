@@ -1,0 +1,48 @@
+.ContactScreen-Container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.ContactScreen-LeftContainer {
+  flex: 3;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.ContactScreen-Picture {
+  background-size: cover;
+  background-image: url(../images/contact.jpg);
+  height: 23em;
+  width: 23em;
+  border-radius: 50%;
+}
+.ContactScreen-RightContainer {
+  flex: 5;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.ContactScreen-Methods {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.ContactScreen-Text {
+  font-size: 2em;
+  margin: 0 0 0.5em;
+  color: #000;
+}
+@media only screen and (max-width: 1024px) {
+  .ContactScreen-Picture {
+    height: 10em;
+    width: 10em;
+  }
+  .ContactScreen-Container {
+    flex-direction: column-reverse;
+  }
+}

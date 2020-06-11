@@ -1,0 +1,12 @@
+.WelcomeScreen {
+  font-weight: 700;
+  text-align: center;
+}
+.WelcomeScreen-LargeText {
+  font-size: 7em;
+  margin: 0;
+}
+.WelcomeScreen-Text {
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}

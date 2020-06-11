@@ -1,0 +1,115 @@
+.KiLabsLogo {
+  height: 7em;
+  width: auto;
+}
+
+.OttonovaLogo {
+  height: 8em;
+  width: auto;
+  margin-bottom: 0.5em;
+}
+@media only screen and (max-width: 1024px) {
+  .OttonovaLogo {
+    height: 7em;
+  }
+}
+
+.InterNationsLogo {
+  height: 8em;
+  width: auto;
+  margin-bottom: 0.5em;
+}
+@media only screen and (max-width: 1024px) {
+  .InterNationsLogo {
+    height: 6em;
+  }
+}
+
+.HoneyTracksLogo {
+  height: 8em;
+  width: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .HoneyTracksLogo {
+    height: 6em;
+  }
+}
+
+.AgilioLogo {
+  height: 8em;
+  width: auto;
+  margin-bottom: 0.5em;
+}
+@media only screen and (max-width: 1024px) {
+  .AgilioLogo {
+    height: 7em;
+  }
+}
+
+.ArobsLogo {
+  height: 8em;
+  width: auto;
+  margin-bottom: 0.5em;
+}
+@media only screen and (max-width: 1024px) {
+  .ArobsLogo {
+    height: 7em;
+  }
+}
+
+.UtcnLogo {
+  height: 8em;
+  width: auto;
+  margin-bottom: 0.5em;
+}
+@media only screen and (max-width: 1024px) {
+  .UtcnLogo {
+    height: 5em;
+  }
+}
+
+.GitHubLogo {
+  height: 6em;
+}
+.GitHubLogo-Link {
+  display: block;
+  margin: 0 1em;
+}
+.GitHubLogo-Link:hover {
+  fill: #d42d38;
+}
+@media only screen and (max-width: 1024px) {
+  .GitHubLogo {
+    height: 3em;
+  }
+}
+.LinkedInLogo {
+  height: 6em;
+}
+.LinkedInLogo-Link {
+  display: block;
+  margin: 0 1em;
+}
+.LinkedInLogo-Link:hover {
+  fill: #d42d38;
+}
+@media only screen and (max-width: 1024px) {
+  .LinkedInLogo {
+    height: 3em;
+  }
+}
+.MailLogo {
+  height: 4em;
+}
+.MailLogo-Link {
+  display: block;
+  margin: 0 1em;
+}
+.MailLogo-Link:hover {
+  fill: #d42d38;
+}
+@media only screen and (max-width: 1024px) {
+  .MailLogo {
+    height: 2em;
+  }
+}
