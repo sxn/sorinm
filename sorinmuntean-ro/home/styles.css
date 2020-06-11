@@ -46,6 +46,10 @@ p {
   align-items: center;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+  width: 100%;
 }
 .GitHubLogo {
   height: 6em;

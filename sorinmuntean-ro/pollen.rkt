@@ -4,10 +4,12 @@
 
 (provide (all-from-out "home/home.rkt"))
 
-(module setup racket/base
-  (require file/glob)
-  (require pollen/setup)
-  (require racket/runtime-path racket/path racket/set)
+(module+ setup
+  (require racket/runtime-path)
+  (provide (all-defined-out))
 
-  (define rkt-files (glob "home/*.rkt"))
-  (define cache-watchlist rkt-files))
+  (define-runtime-path home-module "home/home.rkt")
+  (define compile-cache-active #f)
+  (define render-cache-active #f)
+
+  (define cache-watchlist (list home-module)))

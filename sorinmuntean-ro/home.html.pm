@@ -2,4 +2,4 @@
 
 ◊(define-meta template "home/template.html")
 
-◊(make-welcome "Hello")
+◊(make-home)
