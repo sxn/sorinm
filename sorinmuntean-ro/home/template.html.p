@@ -12,5 +12,7 @@
 
   <body>
     ◊(->html doc #:splice? #t)
+
+    <script defer src="./home/app.js"></script>
   </body>
 </html>

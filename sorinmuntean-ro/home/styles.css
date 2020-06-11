@@ -1,14 +1,17 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:300|Oswald:300,400";
+
 body {
   padding: 0;
   font-family: Open Sans, sans-serif;
   background: #e1e1e1;
   color: #575757;
 }
+
 body,
 p {
   margin: 0;
 }
+
 .Bullet {
   display: block;
   height: 0.7em;
@@ -42,6 +45,7 @@ p {
     display: none;
   }
 }
+
 .Page {
   align-items: center;
   display: flex;
