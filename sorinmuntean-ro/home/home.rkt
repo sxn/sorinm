@@ -242,7 +242,8 @@
                   (div ([class "ContactPage-Picture"])))
              (div ([class "ContactPage-RightContainer"])
                   (div ([class "ContactPage-Description"])
-                       (p ([class "ContactPage-Text"]) "Let's work together!")
+                       (p ([class "ContactPage-Text"])
+                          "If you want to get in touch, here are a few channels:")
                        (div ([class "ContactPage-Methods"])
                             ,mail-logo
                             ,github-logo
