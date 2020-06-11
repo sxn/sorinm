@@ -19,7 +19,6 @@ p {
   background: #fff;
   cursor: pointer;
   opacity: 0.4;
-  transition: opacity 0.35s;
   border-radius: 0.7em;
   margin-top: 0.7em;
   transition: opacity 1s;
@@ -46,7 +45,7 @@ p {
   }
 }
 
-.Page {
+.Screen {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -100,12 +99,12 @@ p {
     height: 2em;
   }
 }
-.ContactPage-Container {
+.ContactScreen-Container {
   height: 100%;
   width: 100%;
   display: flex;
 }
-.ContactPage-LeftContainer {
+.ContactScreen-LeftContainer {
   flex: 3;
   height: 100%;
   justify-content: center;
@@ -113,14 +112,14 @@ p {
   display: flex;
   flex-direction: column;
 }
-.ContactPage-Picture {
+.ContactScreen-Picture {
   background-size: cover;
   background-image: url(contact.jpg);
   height: 23em;
   width: 23em;
   border-radius: 50%;
 }
-.ContactPage-RightContainer {
+.ContactScreen-RightContainer {
   flex: 5;
   height: 100%;
   justify-content: center;
@@ -129,34 +128,34 @@ p {
   flex-direction: column;
   text-align: center;
 }
-.ContactPage-Methods {
+.ContactScreen-Methods {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
-.ContactPage-Text {
+.ContactScreen-Text {
   font-size: 2em;
   margin: 0 0 0.5em;
   color: #000;
 }
 @media only screen and (max-width: 1024px) {
-  .ContactPage-Picture {
+  .ContactScreen-Picture {
     height: 10em;
     width: 10em;
   }
-  .ContactPage-Container {
+  .ContactScreen-Container {
     flex-direction: column-reverse;
   }
 }
-.WelcomePage {
+.WelcomeScreen {
   font-weight: 700;
   text-align: center;
 }
-.WelcomePage-LargeText {
+.WelcomeScreen-LargeText {
   font-size: 7em;
   margin: 0;
 }
-.WelcomePage-Text {
+.WelcomeScreen-Text {
   font-size: 2em;
   margin: 0 0 0.5em;
 }
@@ -261,7 +260,7 @@ p {
   height: 7em;
   width: auto;
 }
-.CompanyPage-LeftContainer {
+.CompanyScreen-LeftContainer {
   flex: 3;
   height: 100%;
   justify-content: center;
@@ -269,27 +268,27 @@ p {
   display: flex;
   flex-direction: column;
 }
-.CompanyPage-Company {
+.CompanyScreen-Company {
   width: 60%;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
 }
-.CompanyPage-LogoLink {
+.CompanyScreen-LogoLink {
   fill: #fff;
 }
-.CompanyPage-CompanyName {
+.CompanyScreen-CompanyName {
   font-size: 2.1em;
   letter-spacing: 0.05rem;
   font-family: Oswald, sans-serif;
   font-weight: 400;
 }
-.CompanyPage-CompanyTitle {
+.CompanyScreen-CompanyTitle {
   font-size: 1.7em;
   font-family: Oswald, sans-serif;
   font-weight: 300;
 }
-.CompanyPage-RightContainer {
+.CompanyScreen-RightContainer {
   flex: 5;
   height: 100%;
   justify-content: center;
@@ -297,23 +296,23 @@ p {
   display: flex;
   flex-direction: column;
 }
-.CompanyPage-DescriptionContainer {
+.CompanyScreen-DescriptionContainer {
   width: 75%;
   font-family: Open Sans Condensed, sans-serif;
   font-weight: 300;
   font-size: 1.2em;
 }
-.CompanyPage-Description {
+.CompanyScreen-Description {
   margin-top: 1em;
 }
 @media only screen and (max-width: 1024px) {
-  .CompanyPage-CompanyName {
+  .CompanyScreen-CompanyName {
     font-size: 1.1em;
   }
-  .CompanyPage-CompanyTitle {
+  .CompanyScreen-CompanyTitle {
     font-size: 0.7em;
   }
-  .CompanyPage-DescriptionContainer {
+  .CompanyScreen-DescriptionContainer {
     font-size: 0.8em;
   }
 }
