@@ -1,0 +1,22 @@
+@import "_bullets.css";
+@import "_company-screen.css";
+@import "_screen.css";
+@import "_contact-screen.css";
+@import "_fonts.css";
+@import "_logos.css";
+@import "_timeline.css";
+@import "_welcome-screen.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  color: #575757;
+  font-size: 16px;
+  line-height: 1.4;
+}

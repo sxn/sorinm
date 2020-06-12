@@ -1,0 +1,32 @@
+.Bullet {
+  display: block;
+  height: 0.7em;
+  width: 0.7em;
+  background: #fff;
+  cursor: pointer;
+  opacity: 0.4;
+  border-radius: 0.7em;
+  margin-top: 0.7em;
+  transition: opacity 1s;
+}
+.Bullet.active {
+  opacity: 1;
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .Bullet {
+    height: 0.5em;
+    width: 0.5em;
+  }
+}
+.Bullets {
+  top: 50%;
+  left: 3%;
+  position: fixed;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .Bullets {
+    display: none;
+  }
+}

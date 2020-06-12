@@ -1,0 +1,56 @@
+.CompanyScreen-LeftContainer {
+  flex: 3;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.CompanyScreen-Company {
+  width: 60%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.CompanyScreen-LogoLink {
+  fill: #fff;
+}
+.CompanyScreen-CompanyName {
+  font-size: 2.1em;
+  letter-spacing: 0.05rem;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+}
+.CompanyScreen-CompanyTitle {
+  font-size: 1.7em;
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
+}
+.CompanyScreen-RightContainer {
+  flex: 5;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.CompanyScreen-DescriptionContainer {
+  width: 75%;
+  font-family: Open Sans Condensed, sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+.CompanyScreen-Description {
+  margin-top: 1em;
+}
+@media only screen and (max-width: 1024px) {
+  .CompanyScreen-CompanyName {
+    font-size: 1.1em;
+  }
+  .CompanyScreen-CompanyTitle {
+    font-size: 0.7em;
+  }
+  .CompanyScreen-DescriptionContainer {
+    font-size: 0.8em;
+  }
+}

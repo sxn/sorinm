@@ -8,5 +8,6 @@
   "devDependencies": {
   },
   "scripts": {
+    "watch": "echo \"implement me!\""
   }
 }
