@@ -15,13 +15,13 @@
 
     <script defer src="./home/static/js/app.js"></script>
 
-    <script type="text/javascript">
-     (function(n, e, m, E, a, $) {}
-       n[E]=n[E]||function(){(n[E].q=n[E].q||[]).push(arguments)};$=e.createElement(m);
-       $.id=E);$.src=a;$.async=1;m=e.getElementsByTagName(m)[0];m.parentNode.insertBefore($,m)
-     (window, document, "script", "nemea", "https://sorin.nemea.co/track.js");
-
-     nemea("view");
+    <script>
+      (function(n, e, m, E, a, $) {
+        n[E]=n[E]||function(){(n[E].q=n[E].q||[]).push(arguments)};$=e.createElement(m);
+        $.id=E;$.src=a;$.async=1;m=e.getElementsByTagName(m)[0];m.parentNode.insertBefore($,m)
+      })(window, document, "script", "nemea", "https://sorin.nemea.co/track.js");
+    
+      nemea("view");
     </script>
   </body>
 </html>
