@@ -1,2 +1,2 @@
 assets: npm run watch
-web: raco koyo serve
+web: raco pollen start
