@@ -4,6 +4,9 @@ node_modules
 # racket
 compiled
 
+# pollen
+sorinmuntean-ro/**/*.html
+
 # testing
 coverage
 
