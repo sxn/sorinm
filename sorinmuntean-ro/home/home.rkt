@@ -27,6 +27,10 @@
     (div ([class "Bullets"])
          ,@(for/list ([_ (in-list screens)])
              '(div ([class "Bullet"]))))
+
+    (div ([id "BackToTop"])
+         (i ([class "ArrowUp"])))
+
     ,@screens))
 
 (define (welcome-screen)

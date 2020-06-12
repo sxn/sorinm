@@ -1,9 +1,21 @@
 (function () {
-  window.addEventListener("load", function () {
+  function init() {
     const state = {
       pages: document.getElementsByClassName("Screen").length,
       currentScreen: Math.round(window.scrollY / window.innerHeight),
     };
+
+    function getBullets() {
+      return [...document.getElementsByClassName("Bullet")];
+    }
+
+    function getScreens() {
+      return document.getElementsByClassName("Screen");
+    }
+
+    function getBackToTop() {
+      return document.getElementById("BackToTop");
+    }
 
     function updateScreen(wantedScreen, shouldScroll) {
       // ensure the newly selected page is in the range [0, pageCount)
@@ -11,15 +23,18 @@
 
       state.currentScreen = Math.min(Math.max(newScreen, 0), state.pages - 1);
 
-      currentScreenColor = document.getElementsByClassName("Screen")[state.currentScreen].dataset.color;
+      currentScreenColor = getScreens()[state.currentScreen].dataset.color;
 
-      [...document.getElementsByClassName("Bullet")].forEach((bullet, index) => {
+      getBullets().forEach((bullet, index) => {
         bullet.className = index === state.currentScreen ? "Bullet active" : "Bullet";
 
         if (currentScreenColor) {
           bullet.style = `background-color: ${currentScreenColor}`;
         }
       });
+
+      const backToTop = getBackToTop();
+      backToTop.style = `color: ${currentScreenColor}; opacity: ${state.currentScreen === 0 ? 0 : 1}`;
 
       if (shouldScroll) {
         scroll({ top: state.currentScreen * window.innerHeight, behavior: "smooth" });
@@ -63,8 +78,11 @@
     document.addEventListener("keydown", disableArrows);
     document.addEventListener("keyup", handleArrowNavigation);
 
-    [...document.getElementsByClassName("Bullet")].forEach((bullet, index) => {
+    getBullets().forEach((bullet, index) => {
       bullet.addEventListener("click", () => updateScreen(index, true));
     });
-  });
+    getBackToTop().addEventListener("click", () => updateScreen(0, true));
+  }
+
+  window.addEventListener("load", init);
 })();
