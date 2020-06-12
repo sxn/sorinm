@@ -1,6 +1,9 @@
 # dependencies
 node_modules
 
+# racket
+compiled
+
 # testing
 coverage
 
@@ -11,5 +14,3 @@ coverage
 .env
 .dumbjump
 npm-debug.log
-
-.#*
