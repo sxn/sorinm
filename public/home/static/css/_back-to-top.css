@@ -1,0 +1,43 @@
+#BackToTop {
+  bottom: 2%;
+  cursor: pointer;
+  display: block;
+  right: 3%;
+  opacity: 0;
+  position: fixed;
+  transition: all 0.5s;
+  z-index: 2;
+}
+.ArrowUp {
+  border-radius: 20px;
+  border: 2px solid;
+  box-sizing: border-box;
+  display: block;
+  height: 22px;
+  left: -50%;
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+}
+.ArrowUp::after,
+.ArrowUp::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 4px;
+}
+.ArrowUp::after {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  left: 6px;
+}
+.ArrowUp::before {
+  width: 2px;
+  height: 10px;
+  left: 8px;
+  background: currentColor;
+}
