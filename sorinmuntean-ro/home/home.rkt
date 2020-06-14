@@ -23,7 +23,19 @@
           (utcn-screen)
           (contact-screen)))
 
+
   `(div
+    (header
+     ([class "Header"])
+     (a ([href ""] [class "header-logo"])
+        (span ([class "header-kicker"]) "hi, my name is")
+        (span ([class "header-name"]) "Sorin Muntean"))
+     (nav ([class "header-nav"] [role "navigation"])
+          (ul ([class "header-nav-list"])
+              (li ([class "header-nav-list-item"])
+                  (a ([href "#contact"]) "contact")))))
+
+
     (div ([class "Bullets"])
          ,@(for/list ([_ (in-list screens)])
              '(div ([class "Bullet"]))))
@@ -47,7 +59,7 @@
                (p ([class "WelcomeScreen-Text"])
                   "I like programming."))))
 
-  (screen #:background-color background-color #:color color #:content content))
+  (screen #:background-color background-color #:color color #:content content #:id "welcome"))
 
 (define (ki-labs-screen)
   (define (ki-labs-logo color)
@@ -77,7 +89,7 @@
   (company-screen #:background-color background-color #:color color
                 #:name name #:logo logo #:url url #:title title
                 #:start-date start-date #:end-date end-date
-                #:description description))
+                #:description description #:id "ki-labs"))
 
 (define (ottonova-screen)
   (define (ottonova-logo color)
@@ -104,7 +116,7 @@
   (company-screen #:background-color background-color #:color color
                 #:name name #:logo logo #:url url #:title title
                 #:start-date start-date #:end-date end-date
-                #:description description))
+                #:description description #:id "ottonova"))
 
 (define (internations-screen)
   (define (internations-logo color)
@@ -130,7 +142,7 @@
   (company-screen #:background-color background-color #:color color
                 #:name name #:logo logo #:url url #:title title
                 #:start-date start-date #:end-date end-date
-                #:description description))
+                #:description description #:id "internations"))
 
 (define (honeytracks-screen)
   (define (honeytracks-logo color)
@@ -153,9 +165,9 @@
       "The technology stack comprised PHP, Backbone.js, Beanstalkd, RabbitMQ & MySQL."))
 
   (company-screen #:background-color background-color #:color color
-                #:name name #:logo logo #:url url #:title title
-                #:start-date start-date #:end-date end-date
-                #:description description))
+                  #:name name #:logo logo #:url url #:title title
+                  #:start-date start-date #:end-date end-date
+                  #:description description #:id "honeytracks"))
 
 (define (agilio-screen)
   (define (agilio-logo color)
@@ -178,9 +190,9 @@
       "- Building the company's homescreen. (jQuery)"))
 
   (company-screen #:background-color background-color #:color color
-                #:name name #:logo logo #:url url #:title title
-                #:start-date start-date #:end-date end-date
-                #:description description))
+                  #:name name #:logo logo #:url url #:title title
+                  #:start-date start-date #:end-date end-date
+                  #:description description #:id "agilio"))
 
 (define (arobs-screen)
   (define (arobs-logo color)
@@ -200,9 +212,9 @@
       "The technology stack comprised .NET, ASP.NET Web Forms and Microsoft SQL Server 2008."))
 
   (company-screen #:background-color background-color #:color color
-                #:name name #:logo logo #:url url #:title title
-                #:start-date start-date #:end-date end-date
-                #:description description))
+                  #:name name #:logo logo #:url url #:title title
+                  #:start-date start-date #:end-date end-date
+                  #:description description #:id "arobs"))
 
 (define (utcn-screen)
   (define (utcn-logo color)
@@ -223,9 +235,9 @@
       "Their bachelor's degree programmes are taught in either Romanian or English, folow the Bologna system and comprise 240 ECTS points, spread throughout 8 semesters."))
 
   (company-screen #:background-color background-color #:color color
-                #:name name #:logo logo #:url url #:title title
-                #:start-date start-date #:end-date end-date
-                #:description description))
+                  #:name name #:logo logo #:url url #:title title
+                  #:start-date start-date #:end-date end-date
+                  #:description description #:id "degree"))
 
 (define (contact-screen)
   (define mail-logo
@@ -271,15 +283,16 @@
                           ,github-logo
                           ,linkedin-logo))))))
 
-  (screen #:background-color background-color #:color color #:content content))
+  (screen #:background-color background-color #:color color #:content content #:id "contact"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Containers ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(define/contract (screen #:background-color background-color #:color color #:content content)
-  (-> #:background-color string? #:color string? #:content (listof xexpr?) xexpr?)
+(define/contract (screen #:background-color background-color #:color color #:content content #:id id)
+  (-> #:background-color string? #:color string? #:content (listof xexpr?) #:id string? xexpr?)
 
-  `(div ([class "Screen"]
+  `(div ([id ,id]
+         [class "Screen"]
          [style ,(format "color: ~a; background-color: ~a" color background-color)]
          [data-color ,color])
         ,@content))
@@ -287,11 +300,13 @@
 (define/contract (company-screen #:background-color background-color #:color color
                                #:name name #:logo logo #:url url #:title title
                                #:start-date start-date #:end-date end-date
-                               #:description description)
+                               #:description description
+                               #:id id)
   (-> #:background-color string? #:color string?
       #:name string? #:logo xexpr? #:url string? #:title string?
       #:start-date string? #:end-date string?
       #:description (listof string?)
+      #:id string?
       xexpr?)
 
   (define (timeline-background the-color)
@@ -328,5 +343,6 @@
                         ,line))))))
 
   (screen #:color color
-        #:background-color background-color
-        #:content content))
+          #:background-color background-color
+          #:content content
+          #:id id))
