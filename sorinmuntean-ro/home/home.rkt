@@ -1,8 +1,6 @@
 #lang racket/base
 
 (require racket/contract
-         racket/path
-         racket/runtime-path
          xml)
 
 (provide home-title
@@ -25,15 +23,15 @@
 
 
   `(div
-    (header
-     ([class "Header"])
-     (a ([href ""] [class "header-logo"])
-        (span ([class "header-kicker"]) "hi, my name is")
-        (span ([class "header-name"]) "Sorin Muntean"))
-     (nav ([class "header-nav"] [role "navigation"])
-          (ul ([class "header-nav-list"])
-              (li ([class "header-nav-list-item"])
-                  (a ([href "#contact"]) "contact")))))
+    ;; (header
+    ;;  ([class "Header"])
+    ;;  (a ([href ""] [class "header-logo"])
+    ;;     (span ([class "header-kicker"]) "hi, my name is")
+    ;;     (span ([class "header-name"]) "Sorin Muntean"))
+    ;;  (nav ([class "header-nav"] [role "navigation"])
+    ;;       (ul ([class "header-nav-list"])
+    ;;           (li ([class "header-nav-list-item"])
+    ;;               (a ([href "#contact"]) "contact")))))
 
 
     (div ([class "Bullets"])
