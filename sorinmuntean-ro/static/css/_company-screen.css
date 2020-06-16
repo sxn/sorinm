@@ -36,9 +36,8 @@
 }
 .CompanyScreen-DescriptionContainer {
   width: 75%;
-  font-family: Open Sans Condensed, sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 .CompanyScreen-Description {
   margin-top: 1em;
@@ -51,6 +50,6 @@
     font-size: 0.7em;
   }
   .CompanyScreen-DescriptionContainer {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 }
