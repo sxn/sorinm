@@ -5,7 +5,7 @@ The source code for [my personal website](https://sorinmuntean.ro).
 ## Requirements
 
 - [Racket] since this is a Racket application.
-- (optionally) [node] and [nvm] if you need to use [Prettier](https://prettier.io) or [TypeScript](https://www.typescriptlang.org/) to check your JS.
+- (optionally) [node](https://nodejs.org/en/) and [nvm](https://github.com/nvm-sh/nvm) to use [Prettier](https://prettier.io) or [TypeScript](https://www.typescriptlang.org/) to check your JS.
 
 ## First-time Setup
 
