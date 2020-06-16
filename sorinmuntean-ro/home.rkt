@@ -49,7 +49,7 @@
     (list`(div ([class "WelcomeScreen"])
                (p ([class "WelcomeScreen-LargeText"])
                   "Hi!")
-               (p ([class "WelcomeScreen-Text"])
+               (h1 ([class "WelcomeScreen-Text"])
                   "My name's Sorin.")
                (p ([class "WelcomeScreen-Text"])
                   "I live in Munich.")
