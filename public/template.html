@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content= "width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content= "width=device-width, initial-scale=1">
     <meta name="description" content="Sorin Muntean's site 🚲 🏊 💻 ❤️">
     <meta property="og:url" content="https://sorinmuntean.ro/">
     <meta property="og:site_name" content="Sorin Muntean">
