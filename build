@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+
 set -euo pipefail
 
-raco pollen render sorinmuntean-ro/ && raco pollen publish sorinmuntean-ro/ public/
+INCLUDE_TRACKING=1 raco pollen render sorinmuntean-ro/ && raco pollen publish sorinmuntean-ro/ public/

@@ -30,6 +30,7 @@
 
     <script defer src="./static/js/app.js"></script>
 
+    ◊when/splice[(getenv "INCLUDE_TRACKING")]{
     <script>
       (function(n, e, m, E, a, $) {
         n[E]=n[E]||function(){(n[E].q=n[E].q||[]).push(arguments)};$=e.createElement(m);
@@ -37,6 +38,6 @@
       })(window, document, "script", "nemea", "https://sorin.nemea.co/track.js");
     
       nemea("view");
-    </script>
+    </script>}
   </body>
 </html>
