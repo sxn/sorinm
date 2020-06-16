@@ -51,7 +51,11 @@
 
       const backToTop = getBackToTop();
       if (backToTop) {
-        backToTop.setAttribute("style", `color: ${currentScreenColor}; opacity: ${state.currentScreen === 0 ? 0 : 1}`);
+        const isAtTop = state.currentScreen === 0;
+        backToTop.setAttribute(
+          "style",
+          `color: ${currentScreenColor}; opacity: ${isAtTop ? 0 : 1}; pointer-events: ${isAtTop ? "none" : "initial"}`,
+        );
       }
 
       if (shouldScroll) {

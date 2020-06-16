@@ -7,8 +7,9 @@
          page-title
          make)
 
-(define base-href "/")
-(define page-title "sorinmuntean.ro")
+(define-values
+  (base-href page-title)
+  (values "/" "sorinmuntean.ro"))
 
 (define (make)
   (define screens
@@ -33,16 +34,14 @@
     ;;       (ul ([class "header-nav-list"])
     ;;           (li ([class "header-nav-list-item"])
     ;;               (a ([href "#contact"]) "contact")))))
-
+    ,@screens
 
     (div ([class "Bullets"])
          ,@(for/list ([_ (in-list screens)])
              '(div ([class "Bullet"]))))
 
     (div ([id "BackToTop"])
-         (i ([class "ArrowUp"])))
-
-    ,@screens))
+         (i ([class "ArrowUp"])))))
 
 (define (welcome-screen)
   (define color "#ffffff")

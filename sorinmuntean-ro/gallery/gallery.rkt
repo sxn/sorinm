@@ -6,8 +6,10 @@
          page-title
          make)
 
-(define base-href "/gallery/")
-(define page-title "sorinmuntean.ro | Photos")
+
+(define-values
+  (base-href page-title)
+  (values "/gallery/" "sorinmuntean.ro | Photos"))
 
 (define (make)
   `(div "Hi!"))
