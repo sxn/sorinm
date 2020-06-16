@@ -6,7 +6,6 @@
 (provide home-title
          make-home)
 
-
 (define home-title "sorinmuntean.ro")
 
 (define (make-home)

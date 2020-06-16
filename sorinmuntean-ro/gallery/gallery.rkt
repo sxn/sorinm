@@ -5,7 +5,6 @@
 (provide gallery-title
          make-gallery)
 
-
 (define gallery-title "sorinmuntean.ro | Photos")
 
 (define (make-gallery)

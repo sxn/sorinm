@@ -1,5 +1,5 @@
 #lang pollen
 
-◊(define-meta template "home/template.html")
+◊(define-meta template "template.html")
 
 ◊(make-home)

@@ -1,11 +1,12 @@
 ◊(local-require pollen/tag)
 
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content= "width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./gallery/static/css/styles.css" />
-    <link rel="shortcut icon" href="./gallery/static/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.css" />
+    <link rel="shortcut icon" href="./static/images/favicon.png">
 
     <title>◊|gallery-title|</title>
   </head>
@@ -13,7 +14,7 @@
   <body>
     ◊(->html doc #:splice? #t)
 
-    <script defer src="./gallery/static/js/app.js"></script>
+    <script defer src="./static/js/app.js"></script>
 
     <script>
       (function(n, e, m, E, a, $) {}

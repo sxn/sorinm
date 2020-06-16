@@ -2,9 +2,9 @@
 node_modules
 
 # racket
-compiled
+compiled/
 
-# pollen
+# pollen output
 sorinmuntean-ro/**/*.html
 
 # testing
