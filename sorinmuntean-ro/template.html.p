@@ -4,15 +4,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content= "width=device-width, initial-scale=1">
+    <meta name="viewport" content= "width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Sorin Muntean's site 🚲 🏊 💻 ❤️">
+    <meta property="og:url" content="https://sorinmuntean.ro/">
+    <meta property="og:site_name" content="Sorin Muntean">
+    <meta property="og:title" content="Matchacha: Cel mai bun ceai verde Matcha din România">
+    <meta property="og:description" content="Sorin Muntean's site 🚲 🏊 💻 ❤️">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sorinmuntean.ro/static/images/contact.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@naetnums">
+    <meta name="twitter:description" content="Sorin Muntean's site 🚲 🏊 💻 ❤️">
+
     <link rel="stylesheet" type="text/css" href="./static/css/styles.css" />
     <link rel="shortcut icon" href="./static/images/favicon.png">
 
-    <title>◊|home-title|</title>
+    <title>◊|page-title|</title>
   </head>
 
   <body>
-    ◊(->html (make-home) #:splice? #t)
+    ◊(->html (make) #:splice? #t)
 
     <script defer src="./static/js/app.js"></script>
 

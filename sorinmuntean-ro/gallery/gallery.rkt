@@ -2,10 +2,10 @@
 
 (require xml)
 
-(provide gallery-title
-         make-gallery)
+(provide page-title
+         make)
 
-(define gallery-title "sorinmuntean.ro | Photos")
+(define page-title "sorinmuntean.ro | Photos")
 
-(define (make-gallery)
+(define (make)
   `(div "Hi!"))

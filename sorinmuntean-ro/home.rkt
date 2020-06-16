@@ -3,12 +3,12 @@
 (require racket/contract
          xml)
 
-(provide home-title
-         make-home)
+(provide page-title
+         make)
 
-(define home-title "sorinmuntean.ro")
+(define page-title "sorinmuntean.ro")
 
-(define (make-home)
+(define (make)
   (define screens
     (list (welcome-screen)
           (ki-labs-screen)
