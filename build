@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+set -euo pipefail
+
+raco pollen render sorinmuntean-ro/ && raco pollen publish sorinmuntean-ro/ public/

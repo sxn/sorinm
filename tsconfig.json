@@ -30,6 +30,6 @@
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
-  "include": ["./sorinmuntean-ro/home/static/js"],
+  "include": ["./sorinmuntean-ro/static/js/", "./sorinmuntean-ro/gallery/static/js/"],
   "exclude": ["./node_modules/"]
 }

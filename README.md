@@ -1,26 +1,27 @@
 The source code for [my personal website](https://sorinmuntean.ro).
 
-## Setup
+## Requirements
 
-### Requirements
+- [Racket] since this is a Racket application.
+- (optionally) [node] and [nvm] if you need to use [Prettier](https://prettier.io) or [TypeScript](https://www.typescriptlang.org/) to check your JS.
 
-- You need [Racket] since this is a Racket application.
-- You need [node] and [nvm] to build the assets.
+## First-time Setup
 
-### First-time Setup
-
-    $ nvm use && npm install && npm run build
-    $ raco pkg install chief
-    $ raco pkg install sorinmuntean-ro/ # install and build the application and its deps
+```sh
+$ nvm use && npm install
+$ raco pkg install sorinmuntean-ro/ # install and build the application and its deps
+```
 
 ## Running the app locally
 
-    $ nvm use
-    $ raco chief start
+```sh
+$ ./start
+```
 
 ## Deploying the app
 
-    $ raco pollen render sorinmuntean-ro/
-    $ raco pollen publish sorinmuntean-ro/ public/
+```sh
+$ ./build
+```
 
 Then commit the changes and push them to the `pages` branch.
