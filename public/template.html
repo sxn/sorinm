@@ -8,7 +8,7 @@
     <meta name="description" content="Sorin Muntean's site 🚲 🏊 💻 ❤️">
     <meta property="og:url" content="https://sorinmuntean.ro/">
     <meta property="og:site_name" content="Sorin Muntean">
-    <meta property="og:title" content="Matchacha: Cel mai bun ceai verde Matcha din România">
+    <meta property="og:title" content="Sorin Muntean's site 🚲 🏊 💻 ❤️">
     <meta property="og:description" content="Sorin Muntean's site 🚲 🏊 💻 ❤️">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://sorinmuntean.ro/static/images/contact.jpg">
