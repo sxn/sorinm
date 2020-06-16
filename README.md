@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a9936cd-e6c5-4e57-a08c-296137130898/deploy-status)](https://app.netlify.com/sites/sorinmuntean/deploys)
+
 The source code for [my personal website](https://sorinmuntean.ro).
 
 ## Requirements
