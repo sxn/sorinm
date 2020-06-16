@@ -3,9 +3,11 @@
 (require racket/contract
          xml)
 
-(provide page-title
+(provide base-href
+         page-title
          make)
 
+(define base-href "/")
 (define page-title "sorinmuntean.ro")
 
 (define (make)

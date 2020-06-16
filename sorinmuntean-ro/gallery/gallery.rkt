@@ -2,9 +2,11 @@
 
 (require xml)
 
-(provide page-title
+(provide base-href
+         page-title
          make)
 
+(define base-href "/gallery/")
 (define page-title "sorinmuntean.ro | Photos")
 
 (define (make)

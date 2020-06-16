@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="./static/css/styles.css" />
     <link rel="shortcut icon" href="./static/images/favicon.png">
 
+    <base href="◊|base-href|">
+
     <title>◊|page-title|</title>
   </head>
 
