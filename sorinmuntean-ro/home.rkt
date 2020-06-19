@@ -81,8 +81,8 @@
     '("KI labs is an IT consulting firm, part of KI group."
       "Since joining, I've worked on three products:"
       "- a vehicle data enrichment and online sale-readiness assessment platform (VueJS, TypeScript, Python w/ Flask)"
-      "- an online marketplace for continuing professional development programs, aimed at professionals in the healthcare industry (VueJS, TypeScript)"
-      "- a cloud computing services platform (ReactJS)"))
+      "- an online marketplace for continuing professional development programs, aimed at professionals in the healthcare industry (VueJS, TypeScript, Go)"
+      "- a cloud computing services platform (ReactJS, TypeScript, Python w/ AIOHTTP)"))
 
   (company-screen #:background-color background-color #:color color
                 #:name name #:logo logo #:url url #:title title

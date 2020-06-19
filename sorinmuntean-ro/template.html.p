@@ -38,7 +38,6 @@
       })(window, document, "script", "nemea", "https://sorin.nemea.co/track.js");
     
       nemea("view");
-    </script>
-    <script data-goatcounter="https://sorin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>}
+    </script>}
   </body>
 </html>
