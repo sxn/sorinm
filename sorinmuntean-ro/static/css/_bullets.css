@@ -9,7 +9,7 @@
   margin-top: 0.7em;
   transition: opacity 1s;
 }
-.Bullet.active {
+.Bullet--active {
   opacity: 1;
 }
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
@@ -24,6 +24,9 @@
   position: fixed;
   transform: translateY(-50%);
   z-index: 2;
+}
+.Bullets--hidden {
+  visibility: hidden;
 }
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
   .Bullets {

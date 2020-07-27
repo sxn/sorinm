@@ -36,7 +36,7 @@
     ;;               (a ([href "#contact"]) "contact")))))
     ,@screens
 
-    (div ([class "Bullets"])
+    (div ([class "Bullets Bullets--hidden"])
          ,@(for/list ([_ (in-list screens)])
              '(div ([class "Bullet"]))))
 

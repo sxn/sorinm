@@ -4,12 +4,34 @@
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Getters ////////////////////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  function getBullets() {
-    return [...document.getElementsByClassName("Bullet")];
+
+  /**
+   * @returns {Element|null}
+   */
+  function getBulletContainer() {
+    return document.getElementsByClassName("Bullets")[0] || null;
   }
 
-  function getScreenColor(/** @type number*/ index) {
-    const screens = document.getElementsByClassName("Screen");
+  /**
+   * @returns {Element[]}
+   */
+  function getBullets() {
+    return Array.from(document.getElementsByClassName("Bullet"));
+  }
+
+  /**
+   * @returns {Element[]}
+   */
+  function getScreens() {
+    return Array.from(document.getElementsByClassName("Screen"));
+  }
+
+  /**
+   * @param {number} index
+   * @returns {string|null}
+   */
+  function getScreenColor(index) {
+    const screens = getScreens();
     const screen = screens[index];
     if (!screen) {
       return null;
@@ -35,14 +57,23 @@
       currentScreen: Math.round(window.scrollY / window.innerHeight),
     };
 
-    function goToScreen(/** @type number */ wantedScreen, /** @type boolean */ shouldScroll) {
+    /**
+     * @param {number} wantedScreen
+     * @param {Object} options
+     * @param {boolean} options.shouldScroll
+     */
+    function goToScreen(wantedScreen, { shouldScroll = false }) {
       // ensure the newly selected page is in the range [0, pageCount)
       state.currentScreen = Math.min(Math.max(wantedScreen, 0), state.pages - 1);
 
       const currentScreenColor = getScreenColor(state.currentScreen);
 
       getBullets().forEach((bullet, index) => {
-        bullet.className = index === state.currentScreen ? "Bullet active" : "Bullet";
+        if (index === state.currentScreen) {
+          bullet.classList.add("Bullet--active");
+        } else {
+          bullet.classList.remove("Bullet--active");
+        }
 
         if (currentScreenColor) {
           bullet.setAttribute("style", `background-color: ${currentScreenColor}`);
@@ -64,11 +95,17 @@
     }
 
     function initEventListeners() {
-      function handleScroll(/** @type Event */ _e) {
-        goToScreen(Math.round(window.scrollY / window.innerHeight), false);
+      /**
+       * @param {Event} _e
+       */
+      function handleScroll(_e) {
+        goToScreen(Math.round(window.scrollY / window.innerHeight), { shouldScroll: false });
       }
 
-      function disableArrows(/** @type KeyboardEvent */ e) {
+      /**
+       * @param {KeyboardEvent} e
+       */
+      function disableArrows(e) {
         const upArrowPressed = e.code === "ArrowUp";
         const downArrowPressed = e.code === "ArrowDown";
 
@@ -77,12 +114,15 @@
         }
       }
 
-      function handleArrowNavigation(/** @type KeyboardEvent */ e) {
+      /**
+       * @param {KeyboardEvent} e
+       */
+      function handleArrowNavigation(e) {
         const upArrowPressed = e.code === "ArrowUp";
         const kPressed = e.code === "KeyK";
 
         if (upArrowPressed || kPressed) {
-          goToScreen(state.currentScreen - 1, true);
+          goToScreen(state.currentScreen - 1, { shouldScroll: true });
           return;
         }
 
@@ -90,13 +130,16 @@
         const jPressed = e.code === "KeyJ";
 
         if (downArrowPressed || jPressed) {
-          goToScreen(state.currentScreen + 1, true);
+          goToScreen(state.currentScreen + 1, { shouldScroll: true });
           return;
         }
       }
 
-      function handleBackToTop(/** @type MouseEvent */ _e) {
-        goToScreen(0, true);
+      /**
+       * @param {MouseEvent|KeyboardEvent|TouchEvent} _e
+       */
+      function handleBackToTop(_e) {
+        goToScreen(0, { shouldScroll: true });
       }
 
       document.addEventListener("scroll", handleScroll);
@@ -104,7 +147,7 @@
       document.addEventListener("keyup", handleArrowNavigation);
 
       getBullets().forEach((bullet, index) => {
-        bullet.addEventListener("click", () => goToScreen(index, true));
+        bullet.addEventListener("click", () => goToScreen(index, { shouldScroll: true }));
       });
 
       const backToTop = getBackToTop();
@@ -113,9 +156,18 @@
       }
     }
 
-    goToScreen(Math.round(window.scrollY / window.innerHeight));
+    function showBullets() {
+      const bulletContainer = getBulletContainer();
+      if (!bulletContainer) {
+        return;
+      }
+      bulletContainer.classList.remove("Bullets--hidden");
+    }
+
+    goToScreen(Math.round(window.scrollY / window.innerHeight), { shouldScroll: false });
 
     initEventListeners();
+    showBullets();
   }
 
   window.addEventListener("load", onLoad);
